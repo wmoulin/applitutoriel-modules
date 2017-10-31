@@ -1,0 +1,45 @@
+{
+  "dispatcher": {
+    "stores": {
+      "PageInformationStore": {
+        "currentUser": {
+          "name": "admin",
+          "roles": [
+            {
+              "id": 1,
+              "name": "AppliTuto_ADMIN"
+            },
+            {
+              "id": 2,
+              "name": "AppliTuto_USER"
+            }
+          ]
+        }
+      },
+      "NavigationBaseStore": {
+        "menuItems": []
+      }
+    }
+  },
+  "mock": {
+    "enabled": true,
+    "servicePage" : {
+      "enabled": true
+    },
+    "serviceData" : {
+      "enabled": true
+    }
+  },
+  "contextPath": "applitutoriel-spa",
+  "fullSpa": {
+    "enabled": true,
+    "host": "http://localhost/",
+    "name": "applitutoriel-service"
+  },
+  "services": {
+    "host": "http://localhost/",
+    "name": "applitutoriel-service"
+  },
+  "themeUrl": "http://localhost/5.0.0/intranet",
+  "locale": "fr-FR"
+}

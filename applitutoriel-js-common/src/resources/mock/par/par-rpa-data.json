@@ -1,0 +1,535 @@
+{
+  "data": {
+    "nbTotal": 33,
+    "liste": [
+      {
+        "id": 56,
+        "listeProduit": null,
+        "ville": {
+          "id": null,
+          "libelle": null,
+          "pays": {
+            "id": null,
+            "nationalite": null,
+            "libelle": null
+          }
+        },
+        "civilite": {
+          "id": null,
+          "libelle": null
+        },
+        "nationalite": {
+          "id": null,
+          "nationalite": null,
+          "libelle": null
+        },
+        "photo": null,
+        "isClient": true,
+        "isVIP": true,
+        "isVIPFiltre": null,
+        "nom": "ALBERT",
+        "prenom": "Renaud",
+        "nomLocal": null,
+        "prenomLocal": null,
+        "fonction": null,
+        "proTelFixe": null,
+        "proTelPort": null,
+        "proCourriel": "renaud.albert@msn.com",
+        "proFax": null,
+        "proAdrCP": null,
+        "proAdrRue": null,
+        "assistNom": null,
+        "assistPrenom": null,
+        "assistTel": null,
+        "assistCourriel": null,
+        "commentaire": null,
+        "organisme": "Organisme 2",
+        "satisfaction": null,
+        "dateCrea": 995925600000,
+        "dateModif": 1496268000000,
+        "labelIsVIP": "oui"
+      },
+      {
+        "id": 26,
+        "listeProduit": null,
+        "ville": {
+          "id": null,
+          "libelle": null,
+          "pays": {
+            "id": null,
+            "nationalite": null,
+            "libelle": null
+          }
+        },
+        "civilite": {
+          "id": null,
+          "libelle": null
+        },
+        "nationalite": {
+          "id": null,
+          "nationalite": null,
+          "libelle": null
+        },
+        "photo": null,
+        "isClient": true,
+        "isVIP": true,
+        "isVIPFiltre": null,
+        "nom": "ALBERT",
+        "prenom": "Pierre",
+        "nomLocal": null,
+        "prenomLocal": null,
+        "fonction": null,
+        "proTelFixe": null,
+        "proTelPort": null,
+        "proCourriel": "pierre.albert@msn.com",
+        "proFax": null,
+        "proAdrCP": null,
+        "proAdrRue": null,
+        "assistNom": null,
+        "assistPrenom": null,
+        "assistTel": null,
+        "assistCourriel": null,
+        "commentaire": null,
+        "organisme": "Organisme 4",
+        "satisfaction": null,
+        "dateCrea": 1106866800000,
+        "dateModif": 1496268000000,
+        "labelIsVIP": "oui"
+      },
+      {
+        "id": 16,
+        "listeProduit": null,
+        "ville": {
+          "id": null,
+          "libelle": null,
+          "pays": {
+            "id": null,
+            "nationalite": null,
+            "libelle": null
+          }
+        },
+        "civilite": {
+          "id": null,
+          "libelle": null
+        },
+        "nationalite": {
+          "id": null,
+          "nationalite": null,
+          "libelle": null
+        },
+        "photo": null,
+        "isClient": true,
+        "isVIP": true,
+        "isVIPFiltre": null,
+        "nom": "ALBERT",
+        "prenom": "Bruce",
+        "nomLocal": null,
+        "prenomLocal": null,
+        "fonction": null,
+        "proTelFixe": null,
+        "proTelPort": null,
+        "proCourriel": "bruce.albert@live.fr",
+        "proFax": null,
+        "proAdrCP": null,
+        "proAdrRue": null,
+        "assistNom": null,
+        "assistPrenom": null,
+        "assistTel": null,
+        "assistCourriel": null,
+        "commentaire": null,
+        "organisme": "Organisme 2",
+        "satisfaction": null,
+        "dateCrea": 1098309600000,
+        "dateModif": 1496268000000,
+        "labelIsVIP": "oui"
+      },
+      {
+        "id": 52,
+        "listeProduit": null,
+        "ville": {
+          "id": null,
+          "libelle": null,
+          "pays": {
+            "id": null,
+            "nationalite": null,
+            "libelle": null
+          }
+        },
+        "civilite": {
+          "id": null,
+          "libelle": null
+        },
+        "nationalite": {
+          "id": null,
+          "nationalite": null,
+          "libelle": null
+        },
+        "photo": null,
+        "isClient": true,
+        "isVIP": false,
+        "isVIPFiltre": null,
+        "nom": "ALFRED",
+        "prenom": "David",
+        "nomLocal": null,
+        "prenomLocal": null,
+        "fonction": null,
+        "proTelFixe": null,
+        "proTelPort": null,
+        "proCourriel": "david.alfred@yahoo.fr",
+        "proFax": null,
+        "proAdrCP": null,
+        "proAdrRue": null,
+        "assistNom": null,
+        "assistPrenom": null,
+        "assistTel": null,
+        "assistCourriel": null,
+        "commentaire": null,
+        "organisme": "Organisme 1",
+        "satisfaction": null,
+        "dateCrea": 1079305200000,
+        "dateModif": 1496268000000,
+        "labelIsVIP": "non"
+      },
+      {
+        "id": 47,
+        "listeProduit": null,
+        "ville": {
+          "id": null,
+          "libelle": null,
+          "pays": {
+            "id": null,
+            "nationalite": null,
+            "libelle": null
+          }
+        },
+        "civilite": {
+          "id": null,
+          "libelle": null
+        },
+        "nationalite": {
+          "id": null,
+          "nationalite": null,
+          "libelle": null
+        },
+        "photo": null,
+        "isClient": true,
+        "isVIP": false,
+        "isVIPFiltre": null,
+        "nom": "ALFRED",
+        "prenom": "Guillaume",
+        "nomLocal": null,
+        "prenomLocal": null,
+        "fonction": null,
+        "proTelFixe": null,
+        "proTelPort": null,
+        "proCourriel": "guillaume.alfred@live.fr",
+        "proFax": null,
+        "proAdrCP": null,
+        "proAdrRue": null,
+        "assistNom": null,
+        "assistPrenom": null,
+        "assistTel": null,
+        "assistCourriel": null,
+        "commentaire": null,
+        "organisme": "Organisme 4",
+        "satisfaction": null,
+        "dateCrea": 1496268000000,
+        "dateModif": 1496268000000,
+        "labelIsVIP": "non"
+      },
+      {
+        "id": 94,
+        "listeProduit": null,
+        "ville": {
+          "id": null,
+          "libelle": null,
+          "pays": {
+            "id": null,
+            "nationalite": null,
+            "libelle": null
+          }
+        },
+        "civilite": {
+          "id": null,
+          "libelle": null
+        },
+        "nationalite": {
+          "id": null,
+          "nationalite": null,
+          "libelle": null
+        },
+        "photo": null,
+        "isClient": true,
+        "isVIP": false,
+        "isVIPFiltre": null,
+        "nom": "ALFRED",
+        "prenom": "Albert",
+        "nomLocal": null,
+        "prenomLocal": null,
+        "fonction": null,
+        "proTelFixe": null,
+        "proTelPort": null,
+        "proCourriel": "albert.alfred@yahoo.fr",
+        "proFax": null,
+        "proAdrCP": null,
+        "proAdrRue": null,
+        "assistNom": null,
+        "assistPrenom": null,
+        "assistTel": null,
+        "assistCourriel": null,
+        "commentaire": null,
+        "organisme": "Organisme 4",
+        "satisfaction": null,
+        "dateCrea": 1067209200000,
+        "dateModif": 1496268000000,
+        "labelIsVIP": "non"
+      },
+      {
+        "id": 32,
+        "listeProduit": null,
+        "ville": {
+          "id": null,
+          "libelle": null,
+          "pays": {
+            "id": null,
+            "nationalite": null,
+            "libelle": null
+          }
+        },
+        "civilite": {
+          "id": null,
+          "libelle": null
+        },
+        "nationalite": {
+          "id": null,
+          "nationalite": null,
+          "libelle": null
+        },
+        "photo": null,
+        "isClient": true,
+        "isVIP": true,
+        "isVIPFiltre": null,
+        "nom": "BAZIN",
+        "prenom": "Max",
+        "nomLocal": null,
+        "prenomLocal": null,
+        "fonction": null,
+        "proTelFixe": null,
+        "proTelPort": null,
+        "proCourriel": "max.bazin@gmail.com",
+        "proFax": null,
+        "proAdrCP": null,
+        "proAdrRue": null,
+        "assistNom": null,
+        "assistPrenom": null,
+        "assistTel": null,
+        "assistCourriel": null,
+        "commentaire": null,
+        "organisme": "Organisme 1",
+        "satisfaction": null,
+        "dateCrea": 1126994400000,
+        "dateModif": 1496268000000,
+        "labelIsVIP": "oui"
+      },
+      {
+        "id": 80,
+        "listeProduit": null,
+        "ville": {
+          "id": null,
+          "libelle": null,
+          "pays": {
+            "id": null,
+            "nationalite": null,
+            "libelle": null
+          }
+        },
+        "civilite": {
+          "id": null,
+          "libelle": null
+        },
+        "nationalite": {
+          "id": null,
+          "nationalite": null,
+          "libelle": null
+        },
+        "photo": null,
+        "isClient": true,
+        "isVIP": false,
+        "isVIPFiltre": null,
+        "nom": "BAZIN",
+        "prenom": "Jules",
+        "nomLocal": null,
+        "prenomLocal": null,
+        "fonction": null,
+        "proTelFixe": null,
+        "proTelPort": null,
+        "proCourriel": "jules.bazin@gmail.com",
+        "proFax": null,
+        "proAdrCP": null,
+        "proAdrRue": null,
+        "assistNom": null,
+        "assistPrenom": null,
+        "assistTel": null,
+        "assistCourriel": null,
+        "commentaire": null,
+        "organisme": "Organisme 5",
+        "satisfaction": null,
+        "dateCrea": 1496268000000,
+        "dateModif": 1496268000000,
+        "labelIsVIP": "non"
+      },
+      {
+        "id": 87,
+        "listeProduit": null,
+        "ville": {
+          "id": null,
+          "libelle": null,
+          "pays": {
+            "id": null,
+            "nationalite": null,
+            "libelle": null
+          }
+        },
+        "civilite": {
+          "id": null,
+          "libelle": null
+        },
+        "nationalite": {
+          "id": null,
+          "nationalite": null,
+          "libelle": null
+        },
+        "photo": null,
+        "isClient": true,
+        "isVIP": false,
+        "isVIPFiltre": null,
+        "nom": "DENO",
+        "prenom": "James",
+        "nomLocal": null,
+        "prenomLocal": null,
+        "fonction": null,
+        "proTelFixe": null,
+        "proTelPort": null,
+        "proCourriel": "james.deno@hotmail.com",
+        "proFax": null,
+        "proAdrCP": null,
+        "proAdrRue": null,
+        "assistNom": null,
+        "assistPrenom": null,
+        "assistTel": null,
+        "assistCourriel": null,
+        "commentaire": null,
+        "organisme": "Organisme 3",
+        "satisfaction": null,
+        "dateCrea": 1496268000000,
+        "dateModif": 1496268000000,
+        "labelIsVIP": "non"
+      },
+      {
+        "id": 33,
+        "listeProduit": null,
+        "ville": {
+          "id": null,
+          "libelle": null,
+          "pays": {
+            "id": null,
+            "nationalite": null,
+            "libelle": null
+          }
+        },
+        "civilite": {
+          "id": null,
+          "libelle": null
+        },
+        "nationalite": {
+          "id": null,
+          "nationalite": null,
+          "libelle": null
+        },
+        "photo": null,
+        "isClient": true,
+        "isVIP": true,
+        "isVIPFiltre": null,
+        "nom": "DEVIL",
+        "prenom": "Jacques",
+        "nomLocal": null,
+        "prenomLocal": null,
+        "fonction": null,
+        "proTelFixe": null,
+        "proTelPort": null,
+        "proCourriel": "jacques.devil@hotmail.com",
+        "proFax": null,
+        "proAdrCP": null,
+        "proAdrRue": null,
+        "assistNom": null,
+        "assistPrenom": null,
+        "assistTel": null,
+        "assistCourriel": null,
+        "commentaire": null,
+        "organisme": "Organisme 4",
+        "satisfaction": null,
+        "dateCrea": 1496268000000,
+        "dateModif": 1496268000000,
+        "labelIsVIP": "oui"
+      }
+    ],
+    "pagination": {
+      "pageIndex": 1,
+      "itemsPerPage": 10
+    },
+    "listeCriteres": {
+      "partenaire": {
+        "id": null,
+        "listeProduit": null,
+        "ville": {
+          "id": null,
+          "libelle": null,
+          "pays": {
+            "id": null,
+            "nationalite": null,
+            "libelle": null
+          }
+        },
+        "civilite": {
+          "id": null,
+          "libelle": null
+        },
+        "nationalite": {
+          "id": null,
+          "nationalite": null,
+          "libelle": null
+        },
+        "photo": null,
+        "isClient": true,
+        "isVIP": null,
+        "isVIPFiltre": null,
+        "nom": null,
+        "prenom": null,
+        "nomLocal": null,
+        "prenomLocal": null,
+        "fonction": null,
+        "proTelFixe": null,
+        "proTelPort": null,
+        "proCourriel": null,
+        "proFax": null,
+        "proAdrCP": null,
+        "proAdrRue": null,
+        "assistNom": null,
+        "assistPrenom": null,
+        "assistTel": null,
+        "assistCourriel": null,
+        "commentaire": null,
+        "organisme": null,
+        "satisfaction": null,
+        "dateCrea": null,
+        "dateModif": null,
+        "labelIsVIP": "non"
+      },
+      "utiId": null,
+      "idSecteur": null,
+      "startDate": 1427241600000,
+      "endDate": null,
+      "valid": true
+    }
+  }
+}

@@ -1,0 +1,750 @@
+{
+  // Commentaires autorisés !!
+  "applicationTitle": "Application TUTORIEL",
+  "errorsTitle": "Une erreur est survenue",
+  "applicationLoading": "Chargement de l'application, veuillez patienter ...",
+  "topButtonTitle": "Retour vers le haut de la page",
+  "nfePage": {
+    "title": "Cette page n'existe pas",
+    "backToHome": "Retour à la page d'accueil"
+  },
+  "form": {
+    "requiredLabel": "Saisie obligatoire",
+    "valid": "Valider",
+    "validTitle": "Valider la saisie du formulaire",
+    "cancel": "Annuler",
+    "cancelTitle": "Annuler la saisie du formulaire",
+    "reinit": "Réinitialiser",
+    "reinitTitle": "Réinitialiser les champs de saisie du formulaire",
+    "search": "Rechercher",
+    "searchTitle": "Rechercher à partir des données du formulaire",
+    "fillField": "Les champs marqués d'un astérisque (*) doivent être renseignés.",
+    "submitData": "Données soumises:",
+    "checkbox": {
+      "booleanOui": "Oui",
+      "booleanNon": "Non"
+    },
+    "accordion": {
+      "errors": "erreurs",
+      "error": "erreur"
+    },
+    "autoCompleteField": {
+      "title": "Aide à la saisie d'un champ d'auto-completion",
+      "toolTip": "Commencez la saisie et des propositions vous seront faites. Vous pouvez naviguer dans ces propositions à partir des flèches du clavier",
+      "selectedItem": "{count, plural, =0 {aucun item sélectionné } =1 {1 item sélectionné} other {# items sélectionnés}}",
+      "noResultLabel": "pas de résultat."
+    },
+    "validation": {
+      "generic": "La valeur du champ « {field} » est incorrecte.",
+      "multipleOf": "La valeur du champ « {field} » est incorrecte.",
+      "maximum": "La valeur du champ « {field} » est supérieure au maximum autorisé.",
+      "exclusiveMaximum": "La valeur du champ « {field} » est supérieure au maximum autorisé.",
+      "minimum": "La valeur du champ « {field} » est inférieure au minimum requis.",
+      "exclusiveMinimum": "La valeur du champ « {field} » est inférieure au minimum requis.",
+      "maxLength": "Le champ « {field} » excède le nombre maximum de caractères autorisé. Veuillez corriger la saisie de ce champ.",
+      "minLength": "Le nombre de caractères du champ « {field} » est inférieur au minimum requis.",
+      "pattern": "Le format du champ « {field} » est incorrect.",
+      "format": "Le format du champ « {field} » est incorrect.",
+      "additionalItems": "Un ou plusieurs éléments non valides ont été sélectionnés dans le champ « {field} ».",
+      "items": "Un ou plusieurs éléments non valides ont été sélectionnés dans le champ « {field} ».",
+      "maxItems": "Le nombre d'éléments sélectionnés pour le champ « {field} » est supérieur au maximum autorisé.",
+      "minItems": "Le nombre d'éléments sélectionnés pour le champ « {field} » est inférieur au minimum requis.",
+      "uniqueItems": "Le champ « {field} » ne doit pas contenir de doublons.",
+      "enum": "Le champ « {field} » a une propriété dont la valeur n'est pas dans la liste de valeurs autorisées.",
+      "required": "Le champ « {field} » est obligatoire. Veuillez saisir ce champ.",
+      "formatMinimum": "La valeur du champ « {field} » est inférieure au minimum requis.",
+      "formatMaximum": "La valeur du champ « {field} » est supérieure au maximum autorisé.",
+      "switch": "La valeur du champ « {field} » est incorrecte."
+    }
+  },
+  "uploadFile": {
+    "selectedFile": "{count, plural, =0 {aucun fichier sélectionné } =1 {1 fichier sélectionné} other {# items fichiers sélectionnés}}",
+    "buttonLabel": "Choisir un fichier",
+    "labelSupprimer": "Supprimer"
+  },
+  "dialog": {
+    "closeSymbole": "X",
+    "closeLabel": "Abandonner la saisie",
+    "title": "Boîte de dialogue"
+  },
+  "notification": {
+    "errorsTitle": "Cette page contient des erreurs",
+    "warningsTitle": "Message d'alerte",
+    "infosTitle": "Messages d'information",
+    "personnalsTitle": "Message personnel"
+  },
+  "spinner": {
+    "loadingTitle": "Chargement...",
+    "loadingText": "Action en cours, veuillez patienter ..."
+  },
+  "menu": {
+    "mainMenu": "Menu principal",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "shortcuts": {
+      "enterSpace": "Entre dans le menu ou le sous menu ou active le lien",
+      "escape": "Ferme le menu",
+      "arrowLeft": "Passe au suivant ou au sous-menu",
+      "arrowUp": "Element précédent",
+      "arrowRight": "Passe au menu suivant ou dans un sous menu si on se trouve dans un menu",
+      "arrowDown": "Passe au contenu du menu ou à l'item suivant",
+      "shiftTab": "Fait sortir du menu. Ferme le menu si la tabulation sort de la barre de menu",
+      "tab": "Fait sortir du menu. Ferme le menu si la tabulation sort de la barre de menu"
+    }
+  },
+  "breadcrumb": {
+    "arialabel": "Fil d'ariane"
+  },
+  "toggleColumnsButton": {
+    "title": "Colonnes à afficher/masquer"
+  },
+  "user": {
+    "title": "Gestion de l'utilisateur"
+  },
+  "table": {
+    "pager": {
+      "dropdownTitle": "Nombre d'élément"
+    },
+    "menuActions": {
+      "title": "Menu d'actions"
+    },
+    "filterValid": "Filtrer",
+    "filterValidTitle": "Filtrer",
+    "filterCancel": "Annuler",
+    "filterCancelTitle": "Annuler",
+    "hideFiltering": "Cacher le filtre en cours",
+    "hideFilteringTitle": "Cacher le filtre en cours",
+    "hideFilter": "Cacher le filtrage",
+    "hideFilterTitle": "Cacher le filtrage",
+    "showFilter": "Afficher le filtrage",
+    "showFiltering": "Afficher le filtre en cours",
+    "emptyResult": "Aucune information à présenter.",
+    "loading": "chargement...",
+    "addTitle": "Ajouter",
+    "selectedTitle": "Sélectionner",
+    "selectedAllTitle": "Tout sélectionner",
+    "deselectedAllTitle": "Tout désélectionner",
+    "massActionConfirmMessage": "Etes-vous sûr(e) de vouloir supprimer ce(s) élément(s)",
+    "massActionConfirmTitle": "Supprimer ce(s) élément(s)",
+    "massActionTitle": "Suppression multiple",
+    "sortByTitle": "Trier par {columnTitle} {sortTitle}",
+    "sortedByTitle": "Trié par {columnTitle} {sortTitle}",
+    "descending": "dans l'ordre décroissant",
+    "ascending": "dans l'ordre croissant",
+    "rowNumber": "Lignes : ",
+    "pageFooter": "Afficher :",
+    "pageFooterOn": "sur",
+    "exportTitle": "Exporter au format {format}",
+    "numberElementTitle": "{count, plural, =0 {(aucun élément) } =1 {(1 élément)} other {(# éléments)}}",
+    "mediaTypeTitle": {
+      "xls": "Excel",
+      "csv": "CSV",
+      "pdf": "PDF"
+    },
+    "firstPage": "|< Début",
+    "prevPage": "< Précédent",
+    "nextPage": "Suivant >",
+    "lastPage": "Fin >|",
+    "inputPage": "Saisie de la page à afficher",
+    "10": "10",
+    "20": "20",
+    "50": "50",
+    "100": "100",
+    "displayAll": "Afficher tout",
+    "shortcuts": {
+      "iconTitle": "Informations raccourcis",
+      "modalTitle": "Accessibilité Tableau",
+      "modalContentTitle": "Raccourcis clavier",
+      "navigation": "Navigation au sein du tableau",
+      "firstLine": "Première ligne",
+      "lastLine": "Dernière ligne",
+      "lineBeginning": "Début de ligne",
+      "lineEnd": "Fin de ligne",
+      "selectAll": "Sélectionner toutes les lignes",
+      "selectCurrentLine": "Sélectionner la ligne courante",
+      "toggleMode": "Basculer entre mode navigation simple (la tabulation fait sortir du tableau) et mode édition (la tabulation navigue entre les différents boutons d'action)",
+      "escape": "Retourner au mode navigation simple (la tabulation fait sortir du tableau)"
+    },
+    "booleanOui": "oui",
+    "booleanNon": "non"
+  },
+  "calendar": {
+    "agendaTitle": "Agenda",
+    "choiceDate": "Choisir une date",
+    "today": "Aujourd'hui",
+    "now": "Maintenant",
+    "ok": "Ok",
+    "clear": "Effacer",
+    "month": "Mois",
+    "year": "Année",
+    "hourPanelTitle": "Choisir une heure",
+    "minutePanelTitle": "Choisir une minute",
+    "secondPanelTitle": "Choisir une seconde",
+    "monthSelect": "Choisir un mois",
+    "yearSelect": "Choisir une année",
+    "decadeSelect": "Choisir une décade",
+    "yearFormat": "YYYY",
+    "dateFormat": "DD/MM/YYYY",
+    "monthYearFormat": "MMMM YYYY",
+    "monthFormat": "MMMM",
+    "monthBeforeYear": true,
+    "timezoneOffset": 60,
+    "firstDayOfWeek": 1,
+    "minimalDaysInFirstWeek": 1,
+    "placeHolder": "JJ/MM/AAAA"
+  },
+  "changeLanguage": {
+    "title": "Changer la langue"
+  },
+  "header": {
+    "logoTitle": "Hornet - Retour vers la page d'accueil",
+    "contentTitle": "Aller au contenu de l' ",
+    "menuTitle": "Aller au menu de l' ",
+    "planTitle": "Plan de l'application l' ",
+    "accessTitle": "Politique d'accessibilité de l' ",
+    "content": "Aller au contenu",
+    "menu": "Aller au menu",
+    "plan": "Plan de l'application",
+    "access": "Accessibilité",
+    "help": "Aide",
+    "contact": "Contact",
+    "contactTitle": "Contact de l'",
+    "expand": "Agrandir la page",
+    "contract": "Réduire la page"
+  },
+  "dropdown": {
+    "selectAll": "Sélectionner tout"
+  },
+  "navigation": {
+    "welcome": "Accueil",
+    "accessibility": "Accessibilité",
+    "declarationconformity": "Déclaration de conformité",
+    "contact": "Contact",
+    "plan": "Plan de l'application",
+    "help": "Aide",
+    "connect": "Connexion",
+    "disconnect": "{userLogin} (Déconnexion)",
+    "submenu": "Sous-menu de ",
+    "partenaire": {
+      "gestionDesPartenaires": "Gestion des partenaires",
+      "listeViaRecherche": "Liste (via recherche)",
+      "gestionPartenaire": "Gestion des partenaires",
+      "editionPartenaire": "Editer un partenaire",
+      "creationPartenaire": "Ajouter un partenaire",
+      "fichePartenaire": "Fiche partenaire",
+      "creation": {
+        "text": "Création",
+        "title": "Création d'un partenaire"
+      }
+    },
+    "administration": {
+      "label": "Administration",
+      "secteurs": "Secteurs",
+      "listeSecteurs": "Liste des secteurs",
+      "listeSecteursTitle": "Affiche la liste des secteurs",
+      "repartition": "Répartition"
+    }
+  },
+  "application": {
+    "headerTitle": "diplonet",
+    "headerTitleText": "Retour à l'accueil de Diplonet",
+    "user": {
+      "guest": "Invité"
+    }
+  },
+  "partenairesListePage": {
+    "form": {
+      "titreFormulaire": "Liste des partenaires",
+      "sousTitreFormulaire": "Recherche",
+      "textIntroForm": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.",
+      "fields": {
+        "criteres": {
+          "partenaire": {
+            "isClient": {
+              "label": "Type",
+              "clientLabel": "Client",
+              "fournisseurLabel": "Fournisseur"
+            },
+            "typePartenaire": {
+              "tooltip": "Type de partenaire"
+            },
+            "isVIP": {
+              "label": "VIP",
+              "tooltip": "Les partenaires VIP ne peuvent pas être supprimés",
+              "title": "Very Important Person"
+            }
+          },
+          "idSecteur": {
+            "label": "Secteur",
+            "tous": "Tous"
+          },
+          "startDate": {
+            "label": "Date de début (jj/mm/aaaa)",
+            "title": "Sélection de la date de début.  Format attendu : (jj/mm/aaaa)",
+            "required": "Le champ « Date de début » est obligatoire. Veuillez saisir ce champ.",
+            "format": "Le format du champ « Date de début » est incorrect. Format attendu : (jj/mm/aaaa)",
+            "formatMinimum": "Veuillez saisir une date de début supérieure ou égale à 01/01/1900.",
+            "sectorStartDate": "Lorsqu'un secteur est défini comme critère, veuillez saisir une date de début inférieure ou égale à 01/01/2001.",
+            "sectorBetweenDate": "L'intervalle entre la date de début et de fin doit être supérieur à 2 jours."
+          },
+          "endDate": {
+            "label": "Date de fin (jj/mm/aaaa)",
+            "title": "Sélection de la date de fin.  Format attendu : (jj/mm/aaaa)",
+            "format": "Le format du champ « Date de fin » est incorrect. Format attendu : (jj/mm/aaaa)",
+            "formatMinimum": "Veuillez saisir une date de fin postérieure à la date de début.",
+            "isVipIsEndDate": "Pour un utilisateur de type VIP, la date de fin est obligatoire.",
+            "isLowerStartDate": "Veuillez saisir une date de fin postérieure à la date de début."
+          }
+        }
+      },
+      "groupChamp": "Dernière modification",
+      "searchTitle": "Recherche des partenaires à partir des données saisies",
+      "reinitTitle": "Réinitialisation des données de recherche des partenaires"
+    },
+    "tableau": {
+      "iconConsulter": "Consulter la fiche de {nom} {prenom}",
+      "iconEditer": "Editer la fiche de {nom} {prenom}",
+      "iconSupprimer": "Supprimer la fiche de {nom} {prenom}",
+      "colonnes": {
+        "nom": "Nom",
+        "prenom": "Prénom",
+        "courriel": "Courriel",
+        "organisme": "Organisme",
+        "labelIsVIP": "VIP",
+        "dateModif": "Date de modification",
+        "dateModifInvalid": "Date de modification",
+        "consultation": "Consultation",
+        "edition": "Edition",
+        "suppression": "Suppression",
+        "suppressionTitle": "Suppression partenaire {nom} - {prenom} ",
+        "consultationTitle": "Consultation partenaire {nom} - {prenom} ",
+        "editionTitle": "Edition partenaire {nom} - {prenom} ",
+        "checkTitle": "Sélection partenaire {nom} - {prenom} ",
+        "uncheckTitle": "Désélection partenaire {nom} - {prenom} ",
+        "supprimer": {
+          "title": "Suppression partenaire",
+          "message": "Etes-vous sûr(e) de vouloir supprimer le partenaire ${nom} - ${prenom} ?"
+        }
+      },
+      "tableTitle": "Liste des partenaires correspondant à la recherche",
+      "emptyResult": "Aucun partenaire présent.",
+      "massActionConfirmMessage": "Etes-vous sûr(e) de vouloir supprimer ce(s) partenaire(s) ?",
+      "massActionConfirmTitle": "Supprimer ce(s) partenaire(s)",
+      "massActionTitle": "Suppression multiple de partenaires",
+      "captionText": "Liste des partenires avec fontionnalités d'export (csv, xls, pdf) suppression de masse, filtres avancés, ajout/édition/suppression d'un partenaire",
+      "addTitle": "Ajouter un partenaire",
+      "filterValid": "Filtrer",
+      "filterValidTitle": "Filtrer sur les partenaires",
+      "filterCancel": "Annuler",
+      "filterCancelTitle": "Annuler les filtres sur les partenaires",
+      "hideFiltering": "Cacher le filtre en cours sur les partenaires",
+      "hideFilteringTitle": "Cacher le filtre en cours sur les partenaires",
+      "hideFilter": "Cacher le filtre sur les partenaires",
+      "hideFilterTitle": "Cacher le filtre sur les partenaires",
+      "showFilter": "Afficher le filtre sur les partenaires",
+      "showFiltering": "Afficher le filtre en cours sur les partenaires",
+      "selectedTitle": "Sélectionner le partenaire «{nom} {prenom}»",
+      "selectedAllTitle": "Sélectionner tous les partenaires",
+      "deselectedAllTitle": "Désélectionner tous les partenaires",
+      "sortedByTitle": "Trier les partenaires par {columnTitle} {sortTitle}",
+      "exportTitle": "Exporter les partenaires au format {format}",
+      "mediaTypeTitle": {
+        "xls": "Excel",
+        "csv": "CSV",
+        "pdf": "PDF"
+      }
+    },
+    "suppression": "Supprimer ce partenaire ?",
+    "confirmationSuppression": "Etes-vous sûr(e) de vouloir supprimer ce partenaire ?"
+  },
+  "partenaireFichePage": {
+    "titre": "Gestion des partenaires - {nom} {prenom}",
+    "suffixeCreation": "Création",
+    "ongletIdentiteTitre": "Identité",
+    "ongletListeProduitTitre": "Produits",
+    "ongletListeSecteursTitre": "Secteurs Async",
+    "ongletListeProduitContenu": "Montre la liste des produits",
+    "tableauProduits": {
+      "colonnes": {
+        "desc": "Description",
+        "nom": "Nom"
+      },
+      "tableTitle": "Liste des produits",
+      "emptyResult": "Aucun produits présent.",
+      "massActionConfirmMessage": "Etes-vous sûr(e) de vouloir supprimer ce(s) produit(s) ?",
+      "massActionConfirmTitle": "Supprimer ce(s) produit(s)",
+      "massActionTitle": "Suppression multiple de produits",
+      "captionText": "Liste des produits avec fontionnalités d'export (csv, xls, pdf) suppression de masse, filtres avancés, ajout/édition/suppression d'un produit",
+      "addTitle": "Ajouter un produit",
+      "filterValid": "Filtrer",
+      "filterValidTitle": "Filtrer sur les produits",
+      "filterCancel": "Annuler",
+      "filterCancelTitle": "Annuler les filtres sur les produits",
+      "hideFiltering": "Cacher le filtre en cours sur les produits",
+      "hideFilteringTitle": "Cacher le filtre en cours sur les produits",
+      "hideFilter": "Cacher le filtre sur les produits",
+      "hideFilterTitle": "Cacher le filtre sur les produits",
+      "showFilter": "Afficher le filtre sur les produits",
+      "showFiltering": "Afficher le filtre en cours sur les produits",
+      "selectedTitle": "Sélectionner le produit",
+      "selectedAllTitle": "Sélectionner tous les produits",
+      "deselectedAllTitle": "Désélectionner tous les produits",
+      "sortedByTitle": "Trier les produits par {columnTitle} {sortTitle}",
+      "exportTitle": "Exporter les produits au format {format}",
+      "mediaTypeTitle": {
+        "xls": "Excel",
+        "csv": "CSV",
+        "pdf": "PDF"
+      }
+    },
+    "form": {
+      "type": "Type",
+      "civilite": "Civilité",
+      "sectionCoordPro": "Coordonnées professionnelles",
+      "sectionAdresse": "Adresse",
+      "sectionCoordAssistance": "Coordonnées Assistant",
+      "sectionDivers": "Divers",
+      "sectionSatisfactionClient": "Satisfaction client",
+      "fields": {
+        "isClient": {
+          "label": "Type de partenaire",
+          "clientLabel": "Client",
+          "fournisseurLabel": "Fournisseur"
+        },
+        "isVIP": {
+          "label": "VIP",
+          "tooltip": "Les partenaires VIP ne peuvent pas être supprimés",
+          "title": "Very Important Person"
+        },
+        "civilite": {
+          "label": "Civilité",
+          "required": "Le champ « Civilité » est obligatoire. Veuillez saisir ce champ.",
+          "dependencies": "La valeur du champ « Civilité » est incorrecte.",
+          "libelle": {
+            "required": "Le champ « Civilité » est obligatoire. Veuillez saisir ce champ."
+          },
+          "id": {
+            "required": "Le champ « Civilité » est obligatoire. Veuillez saisir ce champ."
+          }
+        },
+        "nom": {
+          "label": "Nom d'usage",
+          "required": "Le champ « Nom d'usage » est obligatoire. Veuillez saisir ce champ."
+        },
+        "nomLocal": {
+          "label": "Nom en alphabet local",
+          "required": "Le champ « Nom en alphabet local » est obligatoire. Veuillez saisir ce champ."
+        },
+        "prenom": {
+          "label": "Prénom d'usage",
+          "required": "Le champ « Prénom d'usage » est obligatoire. Veuillez saisir ce champ."
+        },
+        "prenomLocal": {
+          "label": "Prénom en alphabet local"
+        },
+        "nationalite": {
+          "label": "Nationalité",
+          "required": "Le champ « Nationalité » est obligatoire. Veuillez saisir ce champ.",
+          "dependencies": "La valeur du champ « Nationalité » est incorrecte. ",
+          "nationalite": {
+            "required": "Le champ « Nationalité » est obligatoire. Veuillez saisir ce champ."
+          },
+          "autoComplete": {
+            "inputWidgetTitle": "Aide à la saisie de la nationalité"
+          },
+          "id": {
+            "required": "Le champ « Nationalité » est obligatoire. Veuillez saisir ce champ.",
+            "type": "Le champ « Nationalité » est obligatoire. Veuillez saisir ce champ."
+          }
+        },
+        "dateNaissance": {
+          "label": "Date de naissance"
+        },
+        "organisme": {
+          "label": "Organisme / société"
+        },
+        "fonction": {
+          "label": "Fonction"
+        },
+        "proTelFixe": {
+          "label": "Téléphone fixe",
+          "tooltip": "Exemples valides : '0240506070', '+(33)240506070'",
+          "pattern": "Le format du champ « Téléphone fixe » est incorrect. Exemples valides : '0240506070', '+(33)240506070'",
+          "format": "Le format du champ « Téléphone fixe » est incorrect. Exemples valides : '0240506070', '+(33)240506070'"
+        },
+        "proTelPort": {
+          "label": "Téléphone portable",
+          "tooltip": "Exemples valides : '0240506070', '+(33)240506070'",
+          "pattern": "Le format du champ « Téléphone portable » est incorrect. Exemples valides : '0240506070', '+(33)240506070'",
+          "format": "Le format du champ « Téléphone portable » est incorrect. Exemples valides : '0240506070', '+(33)240506070'"
+        },
+        "autreTel": {
+          "label": "Autre Tel.",
+          "placeholder": "Ceci est un exemple d'utilisation. Les données ne sont pas enregistrées.",
+          "tooltip": "Exemples valides : '0240506070', '+(33)240506070'",
+          "invalid1": "Le format du champ « Autre téléphone ",
+          "invalid2": " » est incorrect. Exemples valides : '0240506070', '+(33)240506070'",
+          "format": "Le format du champ « Autre téléphone » est incorrect. Exemples valides : '0240506070', '+(33)240506070'",
+          "pattern": "Le format du champ « Autre téléphone » est incorrect. Exemples valides : '0240506070', '+(33)240506070'"
+        },
+        "proCourriel": {
+          "label": "Courriel pro (format attendu: nom@example.com)",
+          "toolTip": "Courriel utilisé pour les invitations.",
+          "minLength": "Le champ « Courriel pro » doit contenir au moins 3 caractères.",
+          "required": "Le champ « Courriel pro » est obligatoire. Veuillez saisir ce champ.",
+          "pattern": "Le format du champ « Courriel pro » est incorrect (format attendu: nom@example.com)",
+          "format": "Le format du champ « Courriel pro » est incorrect (format attendu: nom@example.com)"
+        },
+        "proFax": {
+          "label": "Fax",
+          "tooltip": "Exemples valides : '0240506070', '+(33)240506070'",
+          "invalid": "Le format du champ « Fax » est incorrect. Exemples valides : '0240506070', '+(33)240506070'",
+          "pattern": "Le format du champ « Fax » est incorrect. Exemples valides : '0240506070', '+(33)240506070'",
+          "format": "Le format du champ « Fax » est incorrect. Exemples valides : '0240506070', '+(33)240506070'"
+        },
+        "proAdrRue": {
+          "label": "Rue",
+          "required": "Le champ « Rue » est obligatoire. Veuillez saisir ce champ."
+        },
+        "proAdrCP": {
+          "label": "Code postal",
+          "required": "Le champ « Code postal » est obligatoire. Veuillez saisir ce champ."
+        },
+        "ville": {
+          "required": "Le champ « Ville » est obligatoire. Veuillez saisir ce champ.",
+          "dependencies": "La valeur du champ « Ville » est incorrecte.",
+          "label": "Ville",
+          "id": {
+            "required": "Le champ « Ville » est obligatoire. Veuillez saisir ce champ."
+          },
+          "libelle": {
+            "required": "Le champ « Ville » est obligatoire. Veuillez saisir ce champ."
+          },
+          "pays": {
+            "label": "Pays",
+            "dependencies": "La valeur du champ « Pays » est incorrecte.",
+            "invalid": "La valeur du champ « Pays » est incorrecte.",
+            "id": {
+              "required": "Le champ « Pays » est obligatoire. Veuillez saisir ce champ."
+            },
+            "libelle": {
+              "required": "Le champ « Pays » est obligatoire. Veuillez saisir ce champ."
+            }
+          }
+        },
+        "assistNom": {
+          "label": "Nom"
+        },
+        "assistPrenom": {
+          "label": "Prénom"
+        },
+        "assistTel": {
+          "label": "Téléphone",
+          "tooltip": "Exemples valides : '0240506070', '+(33)240506070'",
+          "invalid": "Le format du champ « Téléphone Assistant » est incorrect.",
+          "pattern": "Le format du champ « Téléphone Assistant » est incorrect. Exemples valides : '0240506070', '+(33)240506070'",
+          "format": "Le format du champ « Téléphone Assistant » est incorrect. Exemples valides : '0240506070', '+(33)240506070'"
+        },
+        "assistCourriel": {
+          "label": "Courriel (format attendu: nom@example.com)",
+          "emailInvalid": "Le format du champ « Courriel des coordonnées assistant » est incorrect. (format attendu: nom@example.com)",
+          "pattern": "Le format du champ « Courriel des coordonnées assistant » est incorrect. (format attendu: nom@example.com)",
+          "format": "Le format du champ « Courriel des coordonnées assistant » est incorrect. (format attendu: nom@example.com)"
+        },
+        "photo": {
+          "label": "Photo de l'individu",
+          "help": "Insérer une photo identifiant l'individu",
+          "selection": "Photo de l'individu",
+          "altImage": "Photo du Partenaire",
+          "maxSize": "La taille du fichier sélectionné dépasse la taille maximale autorisée ({maxSizeInMB} Mo)",
+          "imageType": "Le type de fichier n'est pas valide (fichier attendu de type image: png, bmp, jpg...)",
+          "fileType": "Le type de fichier n'est pas valide. Types attendus : {fileTypeList}",
+          "size": {
+            "maximum": "La taille du fichier sélectionné dépasse la taille maximale autorisée (1 Mo)"
+          },
+          "type": {
+            "enum": "Le type de fichier n'est pas valide. Types attendus : png, gif, jpg, jpeg, bpm, pdf"
+          }
+        },
+        "commentaire": {
+          "label": "Commentaire (limite 255 caractères).",
+          "maxLength": "Le champ « Commentaire » excède {limitValue} caractères  (actuellement {showValue}). Veuillez corriger la saisie de ce champ."
+        },
+        "satisfaction": {
+          "label": "Comment avez-vous entendu parler de nous ?",
+          "internet": "Internet",
+          "bao": "Bouche à oreille",
+          "pub": "Publicité",
+          "tele": "Télévision",
+          "journal": "Journal",
+          "radio": "Radio",
+          "autres": "Autres",
+          "ids": {
+            "required": "Le champ « Satisfaction » est obligatoire. Veuillez saisir ce champ."
+          }
+        }
+      },
+      "buttons": {
+        "autreTel": {
+          "label": "Autre Tel.",
+          "title": "Cliquez pour ajouter un autre numéro de téléphone."
+        },
+        "supprimer": {
+          "title": "Supprimer autre téléphone."
+        }
+      },
+      "validTitle": "Validation de la saisie de la fiche partenaire",
+      "cancelTitle": "Annulation de la saisie de la fiche partenaire",
+      "backTitle": "Retour à la recherche de partenaire",
+      "aucun": "-Aucun-",
+      "aucune": "-Aucune-",
+      "mr": "Mr",
+      "mme": "Mme"
+    }
+  },
+  "repartitionPage": {
+    "title": "Répartition des secteurs sous forme d'un graphique",
+    "description": "Représentation graphique de la répartition des secteurs",
+    "type": {
+      "doughnut": "donut",
+      "pie": "lune",
+      "polarArea": "polaire"
+    }
+  },
+  "contactPage": {
+    "title": "Contact",
+    "form": {
+      "fields": {
+        "nom": {
+          "label": "Nom",
+          "required": "Le champ « Nom » est obligatoire. Veuillez saisir ce champ."
+        },
+        "prenom": {
+          "label": "Prénom",
+          "required": "Le champ « Prénom » est obligatoire. Veuillez saisir ce champ."
+        },
+        "mail": {
+          "label": "Mail",
+          "required": "Le champ « Email » est obligatoire. Veuillez saisir ce champ.",
+          "format": "Le format du champ « Email » est incorrect (format attendu: nom@example.com)"
+        },
+        "message": {
+          "label": "Message",
+          "required": "Le champ « Message » est obligatoire. Veuillez saisir ce champ."
+        }
+      },
+      "validTitle": "Validation de la saisie du formulaire de contact",
+      "cancelTitle": "Annulation de la saisie du formulaire de contact"
+    },
+    "mailTemplate": "${content} \n\n Nom: ${name} \n Prénom: ${firstname} \n Mail: ${mail}",
+    "subject": "Contact depuis l'application"
+  },
+  "administration": {
+    "secteurs": {
+      "titreSecteur": "Liste des secteurs",
+      "table": {
+        "tableTitle": "Administration des secteurs",
+        "captionText": "Liste des secteurs avec fonctionnalités d'ajout/modification/suppression d'un secteur, de trier les secteurs",
+        "emptyResult": "Aucun secteur présent",
+        "addTitle": "Ajouter un secteur",
+        "sortMultiTitle": "Tri multicolonne par date de création décroissant en premier et ensuite par auteur croissant."
+      },
+      "nom": "Nom",
+      "description": "Description",
+      "dateCr": "Date de création",
+      "dateMaj": "Date de mise à jour",
+      "auteur": "Auteur de la création",
+      "quickUpdate": "Edition rapide",
+      "quickUpdateTitle": "Modification rapide du secteur {nom}",
+      "modification": "Modification",
+      "modificationTitle": "Modification du secteur {nom}",
+      "suppression": "Suppression",
+      "suppressionAlt": "Suppression du secteur {desc}",
+      "confirmationSuppression": "Etes-vous sûr(e) de vouloir supprimer ce secteur ?",
+      "confirmationAnnulationAction": "Etes-vous sûr(e) de vouloir annuler l'action en cours ?",
+      "suppression": "Suppression",
+      "editionRapide": "Edition rapide",
+      "editer": "Editer",
+      "enregistrer": "Enregistrer",
+      "annuler": "Annuler",
+      "suppressionTitle": "Suppression de secteur",
+      "annulationTitle": "Annulation",
+      "form": {
+        "nomRequired": "Le champ « Nom » est obligatoire. Veuillez saisir ce champ.",
+        "descRequired": "Le champ « Description » est obligatoire. Veuillez saisir ce champ.",
+        "dateRequired": "Le champ « Date de mise à jour » est obligatoire. Veuillez saisir ce champ.",
+        "fields": {
+          "desc": {
+            "label": "Description",
+            "required": "Le champ « Description » est obligatoire. Veuillez saisir ce champ.",
+            "maxLength": "Le champ « Description » est limité à 200 caractères. Veuillez corriger votre saisie."
+          },
+          "nom": {
+            "label": "Nom",
+            "required": "Le champ « Nom » est obligatoire. Veuillez saisir ce champ.",
+            "maxLength": "Le champ « Nom » est limité à 50 caractères. Veuillez corriger votre saisie."
+          }
+        },
+        "validTitle": "Validation de la saisie du secteur",
+        "cancelTitle": "Annulation de la saisie du secteur"
+      }
+    },
+    "modification": "Modification d'un secteur",
+    "ajout": "Ajout d'un secteur",
+    "closeModification": "Abandonner la modification d'un secteur",
+    "closeAjout": "Abandonner l'ajout d'un secteur",
+    "validTitle": "Ajout d'un secteur",
+    "cancelTitle": "Annulation de l'ajout d'un secteur"
+  },
+  "error": {
+    "message": {
+      "ERR_HORNET_SECURITY": "Authentification refusée: l'utilisateur ne possède pas les droits suffisants pour accéder cette ressource : {reportId}",
+      "ERR_HORNET_RESOURCE_NOTFOUND": "Ressource non trouvée - rapport d'incident : {reportId}",
+      "ERR_TECH_UNKNOWN": "Une erreur technique est survenue : {errorMessage} / rapport d'incident : {reportId}",
+      "ERR_AUTHENTICATION_FAILED": "Votre identifiant ou votre mot de passe est incorrect",
+      "ERR_B_SECTEUR": "Les secteurs sont vérrouillés !! '{$0}' et '{$1}'",
+      "ERR_PARTENAIRE_VIP_SUPPRESSION": "Le parteraire {$2} {$1} est VIP, il est interdit de le supprimer !",
+      "ER-GE-APP-01": "HornetApp : Le composant à rendre est null",
+      "ER-AD-ASE-01": "Impossible, ce secteur est déjà présent.",
+      "ER-AD-ESE-01": "Impossible, ce secteur est déjà présent.",
+      "ER-AD-ESE-02": "Erreur lors de l'action ListerSecteurs",
+      "ER-AD-ESE-03": "Erreur lors de l'action supprimer secteur : {secteurid}",
+      "ER-AD-ESE-04": "Erreur lors de l'action modifier secteur : {secteurid}",
+      "ER-AD-ESE-05": "Erreur lors de l'action création d'un secteur",
+      "ER-AD-ESE-06": "L'id secteur doit être un entier. Données transmises : {id}",
+      "ER-AD-ESE-07": "Erreur lors de l'action supprimer secteur : un ou plusieurs produit(s) y est(sont) associé(s)",
+      "ER-AD-RPS-01": "Erreur lors de l'action repartition produits",
+      "ER-GE-CNT-01": "Erreur dans l'action de demande de contact",
+      "ER-GE-CNT-02": "Aucune donnée fournie pour l'appel au service distant",
+      "ER-PA-FPA-01": "Erreur dans l'action de ListerPays pour partenaire",
+      "ER-PA-FPA-02": "Erreur dans l'action de ListerAllVilles pour partenaire",
+      "ER-PA-FPA-03": "Erreur dans l'action de lister les nationalités: {msg}",
+      "ER-PA-FPA-04": "Erreur dans l'action de LirePhoto pour partenaire",
+      "ER-PA-FPA-05": "Erreur dans l'action de PrepareDetailPartenaire pour partenaire",
+      "ER-PA-FPA-06": "Erreur dans l'action de préparation des partenaires",
+      "ER-PA-FPA-07": "Erreur dans l'action de sauvegarde du partenaire",
+      "ER-PA-FPA-08": "Erreur dans l'action de préparation des partenaires",
+      "ER-PA-FPA-09": "Consultation : l'id partenaire doit être un entier. Données transmises : {id}",
+      "ER-PA-FPA-10": "Erreur dans le retour du service de lecture de la photo du partenaire",
+      "ER-PA-RPA-01": "Erreur dans l'action : recherche de partenaire",
+      "ER-PA-RPA-02": "Erreur dans l'action : supprimerPartenaire pour partenaire",
+      "ER-PA-RPA-03": "Le partenaire « {prenom} {nom} » n'a pas été supprimé : Impossible de supprimer un partenaire VIP.",
+      "ER-PA-RPA-04": "Erreur dans l'action : supprimerEnMasse pour partenaire",
+      "ER-PA-RPA-05": "Erreur dans l'action : export pour partenaire",
+      "ER-PA-RPA-06": "Erreur dans l'action : preparerExport pour partenaire",
+      "ER-PA-RPA-07": "Le partenaire « {$0} {$1} » n'a pas été supprimé.",
+      "ER-CL-CLI-01": "Une erreur technique est survenue: {error}",
+      "ERR-CODE-MAIL-001": "Un problème réseau (erreur SMTP) est survenu lors de l'envoi de mail"
+    }
+  },
+  "info": {
+    "message": {
+      "IN-PA-RPA-01": "Le partenaire « {$0} {$1} » a bien été supprimé.",
+      "IN-AD-LST-01": "Le secteur a bien été modicreerfié.",
+      "IN-AD-LST-02": "Le secteur a bien été supprimé.",
+      "IN-AD-LST-03": "Le secteur a bien été créé.",
+      "IN-GE-CNT-01": "Le message a bien été envoyé.",
+      "IN-PA-FPA-01": "Le partenaire « {prenom} {nom} » a bien été sauvegardé."
+    }
+  }
+}

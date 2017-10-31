@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Recherche de partenaires",
+  "description": "Validation des données de formulaire de recherche de partenaires",
+  "type": "object",
+  "required": [
+    "criteres"
+  ],
+  "properties": {
+    "criteres": {
+      "title": "Critères de recherche",
+      "description": "Objet contenant au moins la date de départ",
+      "type": "object",
+      "required": [
+        "startDate"
+      ],
+      "properties": {
+        "partenaire": {
+          "title": "Critères concernant le partenaire",
+          "type": "object",
+          "properties": {
+            "isClient": {
+              "description": "Indique si le partenaire est client (true) ou fournisseur (false) ",
+              "type": "boolean"
+            },
+            "isVIP": {
+              "description": "Indique si le partenaire est VIP",
+              "type": "boolean"
+            }
+          }
+        },
+        "idSecteur": {
+          "description": "Identifiant du secteur de rattachement",
+          "type": "number"
+        },
+        "startDate": {
+          "description": "Date de départ : doit être supérieure ou égale à une constante (01/01/1900 au format ISO 8601)",
+          "type": "string",
+          "format": "date-time",
+          "formatMinimum": "1900-01-01T00:00:00-00:00"
+        },
+        "endDate": {
+          "description": "Date de fin : doit être supérieure ou égale à la date de départ.",
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

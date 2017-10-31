@@ -1,0 +1,294 @@
+{
+  "hasTechnicalError": false,
+  "hasBusinessError": false,
+  "status": 200,
+  "url": "???",
+  "data": {
+    "nbTotal": 32,
+    "pagination": {
+      "itemsPerPage": 10,
+      "pageIndex": 1,
+      "totalItems": 32,
+      "nbPages": 0
+    },
+    "listeCriteres": {
+      "partenaire": {
+        "isClient": true
+      },
+      "startDate": "2015-03-25T00:00:00.000Z"
+    },
+    "liste": [
+      {
+        "id": 27,
+        "nom": "ALBERT",
+        "prenom": "Pierre",
+        "proCourriel": "pierre.albert@msn.com",
+        "organisme": "Organisme 4",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948889
+      },
+      {
+        "id": 57,
+        "nom": "ALBERT",
+        "prenom": "Renaud",
+        "proCourriel": "renaud.albert@msn.com",
+        "organisme": "Organisme 2",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948904
+      },
+      {
+        "id": 53,
+        "nom": "ALFRED",
+        "prenom": "David",
+        "proCourriel": "david.alfred@yahoo.fr",
+        "organisme": "Organisme 1",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1504562400000
+      },
+      {
+        "id": 48,
+        "nom": "ALFRED",
+        "prenom": "Guillaume",
+        "proCourriel": "guillaume.alfred@live.fr",
+        "organisme": "Organisme 4",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503957600000
+      },
+      {
+        "id": 95,
+        "nom": "ALFRED",
+        "prenom": "Albert",
+        "proCourriel": "albert.alfred@yahoo.fr",
+        "organisme": "Organisme 4",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503957600000
+      },
+      {
+        "id": 33,
+        "nom": "BAZIN",
+        "prenom": "Max",
+        "proCourriel": "max.bazin@gmail.com",
+        "organisme": "Organisme 1",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948892
+      },
+      {
+        "id": 88,
+        "nom": "DENO",
+        "prenom": "James",
+        "proCourriel": "james.deno@hotmail.com",
+        "organisme": "Organisme 3",
+        "isVIP": false,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948919
+      },
+      {
+        "id": 8,
+        "nom": "DEVIL",
+        "prenom": "Matthieu",
+        "proCourriel": "matthieu.devil@orange.net",
+        "organisme": "Organisme 2",
+        "isVIP": false,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948880
+      },
+      {
+        "id": 34,
+        "nom": "DEVIL",
+        "prenom": "Jacques",
+        "proCourriel": "jacques.devil@hotmail.com",
+        "organisme": "Organisme 4",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948893
+      },
+      {
+        "id": 32,
+        "nom": "DUPOND",
+        "prenom": "Jean-Paul",
+        "proCourriel": "jean-paul.dupond@free.fr",
+        "organisme": "Organisme 1",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948892
+      }
+    ]
+  },
+  "errors": []
+}

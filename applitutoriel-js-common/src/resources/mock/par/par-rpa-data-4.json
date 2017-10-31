@@ -1,0 +1,78 @@
+{
+  "hasTechnicalError": false,
+  "hasBusinessError": false,
+  "status": 200,
+  "url": "???",
+  "data": {
+    "nbTotal": 32,
+    "pagination": {
+      "itemsPerPage": 10,
+      "pageIndex": 4,
+      "totalItems": 32,
+      "nbPages": 4
+    },
+    "listeCriteres": {
+      "partenaire": {
+        "isClient": true
+      },
+      "startDate": "2015-03-25T00:00:00.000Z"
+    },
+    "liste": [
+      {
+        "id": 44,
+        "nom": "TADIO",
+        "prenom": "Sylvestre",
+        "proCourriel": "sylvestre.tadio@orange.net",
+        "organisme": "Organisme 1",
+        "isVIP": false,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948898
+      },
+      {
+        "id": 63,
+        "nom": "TADIO",
+        "prenom": "Jean",
+        "proCourriel": "jean.tadio@free.fr",
+        "organisme": "Organisme 2",
+        "isVIP": false,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948907
+      }
+    ]
+  },
+  "errors": []
+}

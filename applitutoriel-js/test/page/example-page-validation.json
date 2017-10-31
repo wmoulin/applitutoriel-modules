@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Exemple",
+  "description": "Exemple de validation de données de formulaire",
+  "type": "object",
+  "properties": {
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "nom",
+    "prenom"
+  ]
+}

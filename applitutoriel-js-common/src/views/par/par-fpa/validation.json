@@ -1,0 +1,279 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Fiche partenaire",
+  "description": "Validation des données de formulaire de la fiche partenaire",
+  "type": "object",
+  "definitions": {
+    "telephone": {
+      "title": "Définition réutilisable de champ de type numéro de téléphone",
+      "description": "Exemples valides : '0240506070', '+(33)240506070'",
+      "type": "string",
+      "maxLength": 14,
+      "pattern": "^((\\+\\d{1,3}(-| )?\\(?\\d\\)?(-| )?\\d{1,5})|(\\(?\\d{2,6}\\)?))(-| )?(\\d{3,4})(-| )?(\\d{4})(( x| ext)\\d{1,5}){0,1}$"
+    },
+    "noWhiteSpace": {
+      "pattern": ".*\\S.*"
+    }
+  },
+  "required": [
+    "civilite",
+    "nom",
+    "prenom",
+    "nationalite",
+    "proCourriel",
+    "proAdrRue",
+    "proAdrCP",
+    "ville"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "isClient": {
+      "description": "Indique si le partenaire est client (true) ou fournisseur (false) ",
+      "type": "boolean"
+    },
+    "isVIP": {
+      "description": "Indique si le partenaire est VIP",
+      "type": "boolean"
+    },
+    "civilite": {
+      "title": "Civilité du partenaire",
+      "description": "Objet contenant au moins l'identifiant de la civilité",
+      "type": "object",
+      "required": [
+        "libelle"
+      ],
+      "dependencies": {
+        "libelle": [
+          "id"
+        ]
+      },
+      "properties": {
+        "libelle": {
+        },
+        "id": {
+          "title": "Identifiant de la civilité ('': -Aucune-, '1' : Mme, '2' : Mr) ",
+          "type": "number"
+        }
+      }
+    },
+    "nom": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50,
+      "$ref": "#/definitions/noWhiteSpace"
+    },
+    "nomLocal": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "prenom": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50,
+      "$ref": "#/definitions/noWhiteSpace"
+    },
+    "prenomLocal": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "nationalite": {
+      "title": "Nationalité du partenaire",
+      "description": "Objet contenant au moins l'identifiant du pays",
+      "type": "object",
+      "required": [
+        "nationalite"
+      ],
+      "dependencies": {
+        "nationalite": [
+          "id"
+        ]
+      },
+      "properties": {
+        "id": {
+          "title": "Identifiant de pays",
+          "type": "number",
+          "minimum": 1
+        },
+        "nationalite": {
+          "title": "Libellé de nationalité",
+          "type": "string"
+        }
+      }
+    },
+    "organisme": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "fonction": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "proTelFixe": {
+      "title": "Téléphone fixe",
+      "description": "Utilisation de la définition 'telephone' située en début de schéma. Cette définition pourrait aussi être externalisée dans un autre schéma.",
+      "$ref": "#/definitions/telephone"
+    },
+    "proTelPort": {
+      "title": "Téléphone portable",
+      "description": "Utilisation de la définition 'telephone'. Définitions : http://json-schema.org/latest/json-schema-validation.html#anchor94",
+      "$ref": "#/definitions/telephone"
+    },
+    "proCourriel": {
+      "title": "Courriel pro",
+      "description": "format 'email' : fait partie de la spécification json-schema (http://json-schema.org/latest/json-schema-validation.html#anchor111) ",
+      "type": "string",
+      "format": "email",
+      "minLength": 3,
+      "maxLength": 80
+    },
+    "proFax": {
+      "title": "Fax",
+      "description": "Utilisation de la définition 'telephone'",
+      "$ref": "#/definitions/telephone"
+    },
+    "proAdrRue": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 250,
+      "$ref": "#/definitions/noWhiteSpace"
+    },
+    "proAdrCP": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 9,
+      "$ref": "#/definitions/noWhiteSpace"
+    },
+    "ville": {
+      "title": "Ville de rattachement",
+      "description": "Objet contenant au moins l'identifiant de la ville et l'identifiant du pays auquel appartient la ville",
+      "type": "object",
+      "required": [
+        "libelle",
+        "pays"
+      ],
+      "dependencies": {
+        "libelle": [
+          "id"
+        ]
+      },
+      "properties": {
+        "id": {
+          "title": "Identifiant de la ville ('': -Aucune-, '16' : Agen, '687' : Aix-en-Provence etc.) ",
+          "type": "number"
+        },
+        "libelle": {},
+        "pays": {
+          "title": "Pays auquel appartient la ville",
+          "type": "object",
+          "required": [
+            "libelle"
+          ],
+          "dependencies": {
+            "libelle": [
+              "id"
+            ]
+          },
+          "properties": {
+            "libelle": {
+            },
+            "id": {
+              "title": "Identifiant du pays (0: -Aucun-, 1 : Afghanistan, 2 : Afrique du Sud etc.) ",
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "assistNom": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "assistPrenom": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "assistTel": {
+      "title": "Téléphone assistant",
+      "description": "Utilisation de la définition 'telephone'",
+      "$ref": "#/definitions/telephone"
+    },
+    "assistCourriel": {
+      "title": "Courriel assistant",
+      "description": "format 'email' : fait partie de la spécification json-schema (http://json-schema.org/latest/json-schema-validation.html#anchor111) ",
+      "type": "string",
+      "format": "email",
+      "maxLength": 80
+    },
+    "photo": {
+      "title": "Photo : champ de type envoi de fichier",
+      "description": "Les propriétés 'name' et 'size' sont des propriétés communes à la classe file Hornet (champ en lecture seule) et à l'objet DOM File (https://developer.mozilla.org/fr/docs/Web/API/File#Properties).",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Nom du fichier",
+          "type": "string"
+        },
+        "size": {
+          "title": "Taille du fichier en octets",
+          "description": "La taille maximale acceptée est de 1Mo",
+          "type": "number",
+          "maximum": 1000000
+        },
+        "type": {
+          "title": "Type MIME",
+          "description": "Enumération de types MIME acceptés",
+          "type": "string",
+          "enum": [
+            "image/png",
+            "image/jpeg",
+            "image/jpg",
+            "image/gif",
+            "image/bmp",
+            "application/pdf"
+          ]
+        }
+      }
+    },
+    "commentaire": {
+      "type": "string",
+      "maxLength": 255
+    },
+    //    "satisfaction": {
+    //      "title": "Satisfaction client",
+    //      "description": "Plusieurs valeurs peuvent être sélectionnées",
+    //      "type": "array"
+    //    }
+    "satisfaction": {
+      "title": "Satisfaction client",
+      "description": "Plusieurs valeurs peuvent être sélectionnées",
+      "type": "object",
+      "properties": {
+        "ids": {
+          "title": "Identifiant de satisfaction",
+          "type": "array",
+          "minimum": 1
+        },
+        "libelle": {
+          "title": "Libellé de satisfaction",
+          "type": "string"
+        }
+      }
+    },
+    "liste-produits-0": {
+      "type": "array",
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "properties": {
+          "autreTel": {
+            "title": "Téléphone fixe",
+            "description": "Utilisation de la définition 'telephone' située en début de schéma. Cette définition pourrait aussi être externalisée dans un autre schéma.",
+            "$ref": "#/definitions/telephone"
+          }
+        }
+      }
+    }
+  }
+}

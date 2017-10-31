@@ -1,0 +1,31 @@
+export interface FichePartenaire {
+    id?: number;
+    ville?: number;
+    civilite?: number;
+    pays?: number;
+    nationalite?: number;
+    photo?: number;
+    isClient?: boolean;
+    isVIP?: boolean;
+    nom?: string;
+    prenom?: string;
+    nomLocal?: string;
+    prenomLocal?: string;
+    dateNaissance?: string;
+    organisme?: string;
+    fonction?: string;
+    proTelFixe?: string;
+    proTelPort?: string;
+    proCourriel?: string;
+    proFax?: string;
+    proAdrRue?: string;
+    proAdrCP?: string;
+    assistNom?: string;
+    assistPrenom?: string;
+    assistTel?: string;
+    assistCourriel?: string;
+    commentaire?: string;
+    satisfaction?: string | string[];
+    dateCreat?: string;
+    dateModif?: string;
+}

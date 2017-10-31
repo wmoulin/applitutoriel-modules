@@ -1,0 +1,294 @@
+{
+  "hasTechnicalError": false,
+  "hasBusinessError": false,
+  "status": 200,
+  "url": "???",
+  "data": {
+    "nbTotal": 32,
+    "pagination": {
+      "itemsPerPage": 10,
+      "pageIndex": 3,
+      "totalItems": 32,
+      "nbPages": 4
+    },
+    "listeCriteres": {
+      "partenaire": {
+        "isClient": true
+      },
+      "startDate": "2015-03-25T00:00:00.000Z"
+    },
+    "liste": [
+      {
+        "id": 66,
+        "nom": "PASCAL",
+        "prenom": "Jean-Pierre",
+        "proCourriel": "jean-pierre.pascal@live.fr",
+        "organisme": "Organisme 4",
+        "isVIP": false,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948909
+      },
+      {
+        "id": 42,
+        "nom": "PASCAL",
+        "prenom": "David",
+        "proCourriel": "david.pascal@yahoo.fr",
+        "organisme": "Organisme 3",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948897
+      },
+      {
+        "id": 77,
+        "nom": "PASCAL",
+        "prenom": "Sylvestre",
+        "proCourriel": "sylvestre.pascal@msn.com",
+        "organisme": "Organisme 5",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948914
+      },
+      {
+        "id": 78,
+        "nom": "PASCAL",
+        "prenom": "Marc",
+        "proCourriel": "marc.pascal@gmail.com",
+        "organisme": "Organisme 4",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948914
+      },
+      {
+        "id": 84,
+        "nom": "PASCAL",
+        "prenom": "Bertrand",
+        "proCourriel": "bertrand.pascal@gmail.com",
+        "organisme": "Organisme 3",
+        "isVIP": false,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948917
+      },
+      {
+        "id": 59,
+        "nom": "PAUL",
+        "prenom": "Bertrand",
+        "proCourriel": "bertrand.paul@yahoo.fr",
+        "organisme": "Organisme 5",
+        "isVIP": false,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948905
+      },
+      {
+        "id": 82,
+        "nom": "SILVA",
+        "prenom": "Paul",
+        "proCourriel": "paul.silva@hotmail.com",
+        "organisme": "Organisme 2",
+        "isVIP": false,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948916
+      },
+      {
+        "id": 61,
+        "nom": "TADIO",
+        "prenom": "Guillaume",
+        "proCourriel": "guillaume.tadio@free.fr",
+        "organisme": "Organisme 3",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948906
+      },
+      {
+        "id": 11,
+        "nom": "TADIO",
+        "prenom": "Vincent",
+        "proCourriel": "vincent.tadio@yahoo.fr",
+        "organisme": "Organisme 1",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948881
+      },
+      {
+        "id": 55,
+        "nom": "TADIO",
+        "prenom": "Albert",
+        "proCourriel": "albert.tadio@hotmail.com",
+        "organisme": "Organisme 3",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948903
+      }
+    ]
+  },
+  "errors": []
+}

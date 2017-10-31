@@ -1,0 +1,14 @@
+{
+  "name": "applitutoriel-modules",
+  "version": "5.1.0-rc.4",
+  "license": "CECILL-2.1",
+  "description": "Projet permettant de builder les différents modules de l'applitutoriel",
+  "bugs": {
+    "url": "https://github.com/diplomatiegouvfr/applitutoriel-modules/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diplomatiegouvfr/applitutoriel-modules.git"
+  },
+  "author": "MEAE - Ministère de l'Europe et des Affaires étrangères"
+}

@@ -1,0 +1,57 @@
+{
+  "name": "applitutoriel-js",
+  "version": "5.1.1",
+  "license": "CECILL-2.1",
+  "main": "index.js",
+  "description": "Application tutoriel utilisant le Framework hornet",
+  "bugs": {
+    "url": "https://github.com/diplomatiegouvfr/applitutoriel-modules/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diplomatiegouvfr/applitutoriel-modules.git"
+  },
+  "tsDefinitionDependencies": {
+    "applitutoriel-js-common-dts": "5.1.1",
+    "hornet-js-ts-typings": "5.1.1",
+    "hornet-js-bean-dts": "5.1.1",
+    "hornet-js-utils-dts": "5.1.1",
+    "hornet-js-core-dts": "5.1.1",
+    "hornet-js-components-dts": "5.1.1",
+    "hornet-js-react-components-dts": "5.1.1",
+    "hornet-js-passport-dts": "5.1.1",
+    "hornet-js-test-dts": "5.1.1"
+  },
+  "appDependencies": {
+    "applitutoriel-js-common": "5.1.1",
+    "hornet-js-bean": "5.1.1",
+    "hornet-js-utils": "5.1.1",
+    "hornet-js-passport": "5.1.1",
+    "hornet-themes-intranet": "5.1.1",
+    "jsonwebtoken": "7.3.0"
+  },
+  "buildDependencies": {},
+  "testDependencies": {
+    "hornet-js-test": "5.1.1"
+  },
+  "scripts": {
+    "init-dev": "hb install",
+    "start": "node index.js"
+  },
+  "author": "MEAE - Ministère de l'Europe et des Affaires étrangères",
+
+
+
+
+
+  "____HORNET-BUILDER____DO_NOT_MODIFY_THIS_OBJECT____": {
+    "current": "d14afd3ce7810eacfd4a7eb0897f7627aabbbb6e",
+    "history": {
+      "d14afd3ce7810eacfd4a7eb0897f7627aabbbb6e": {
+        "version": "5.1.1",
+        "date": "2017-10-17T09:18:23.729Z",
+        "deps": {"base64url":"2.0.0","isemail":"1.2.0","joi":"6.10.1","jwa":"1.1.5","jws":"3.1.4","lodash.once":"4.1.1","moment":"2.19.1","topo":"1.1.0"}
+      }
+    }
+  }
+}

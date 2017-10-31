@@ -1,0 +1,240 @@
+{
+  "hasTechnicalError": false,
+  "hasBusinessError": false,
+  "status": 200,
+  "url": "???",
+  "data": {
+    "nbTotal": 32,
+    "pagination": {
+      "itemsPerPage": 10,
+      "pageIndex": 2,
+      "totalItems": 32,
+      "nbPages": 4
+    },
+    "listeCriteres": {
+      "partenaire": {
+        "isClient": true
+      },
+      "startDate": "2015-03-25T00:00:00.000Z"
+    },
+    "liste": [
+      {
+        "id": 1,
+        "nom": "DUPONT",
+        "prenom": "Jeanne",
+        "proCourriel": "jeanne.dupont@email.com",
+        "organisme": null,
+        "isVIP": false,
+        "dateModif": 1504216800000
+      },
+      {
+        "id": 16,
+        "nom": "DUPONT",
+        "prenom": "Jacques",
+        "proCourriel": "jacques.dupont@orange.net",
+        "organisme": "Organisme 1",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948884
+      },
+      {
+        "id": 21,
+        "nom": "DURAND",
+        "prenom": "Albert",
+        "proCourriel": "albert.durand@gmail.com",
+        "organisme": "Organisme 4",
+        "isVIP": false,
+        "dateModif": 1503570948886
+      },
+      {
+        "id": 31,
+        "nom": "JACK",
+        "prenom": "Vincent",
+        "proCourriel": "vincent.jack@hotmail.com",
+        "organisme": "Organisme 5",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948891
+      },
+      {
+        "id": 65,
+        "nom": "JEAN",
+        "prenom": "Jean",
+        "proCourriel": "jean.jean@hotmail.com",
+        "organisme": "Organisme 3",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948908
+      },
+      {
+        "id": 14,
+        "nom": "JEAN",
+        "prenom": "Max",
+        "proCourriel": "max.jean@orange.net",
+        "organisme": "Organisme 3",
+        "isVIP": false,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948883
+      },
+      {
+        "id": 51,
+        "nom": "JEAN",
+        "prenom": "Matthieu",
+        "proCourriel": "matthieu.jean@bouygues.net",
+        "organisme": "Organisme 4",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948901
+      },
+      {
+        "id": 76,
+        "nom": "KIVEN",
+        "prenom": "Jean-Paul",
+        "proCourriel": "jean-paul.kiven@live.fr",
+        "organisme": "Organisme 1",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948913
+      },
+      {
+        "id": 79,
+        "nom": "KIVEN",
+        "prenom": "Jacques",
+        "proCourriel": "jacques.kiven@gmail.com",
+        "organisme": "Organisme 5",
+        "isVIP": true,
+        "ville": {
+          "id": 2664,
+          "libelle": "Paris",
+          "pays": {
+            "id": 62,
+            "libelle": "France",
+            "nationalite": "française"
+          }
+        },
+        "civilite": {
+          "id": 2,
+          "libelle": "M."
+        },
+        "nationalite": {
+          "id": 62,
+          "libelle": "France",
+          "nationalite": "française"
+        },
+        "dateModif": 1503570948915
+      },
+      {
+        "id": 6,
+        "nom": "MARTIN",
+        "prenom": "Jules",
+        "proCourriel": "jules.martin@gmail.com",
+        "organisme": "Organisme 4",
+        "isVIP": false,
+        "dateModif": 1503570948879
+      }
+    ]
+  },
+  "errors": []
+}

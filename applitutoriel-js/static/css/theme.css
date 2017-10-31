@@ -1,0 +1,42 @@
+.content-modal-body {
+    max-height: 700px;
+}
+
+.green-background-row td, .green-background-row td.hornet-datatable-sorted {
+    background-color: #54c08b /*!important*/
+}
+.red-background-row td, .red-background-row td.hornet-datatable-sorted  {
+    background-color: #f5716e /*!important*/
+}
+
+.yellow-background-row td, .yellow-background-row td.hornet-datatable-sorted  {
+    background-color: #dbf163 /*!important*/
+}
+
+.testModal {
+    left : 50% !important ;
+    top: 50% !important ;
+    transform : translate(-50%, -50%) !important ;
+    width: 900px;
+}
+
+
+#tabsPartenaire-3, #tabsPartenaire-3 a{
+    width: 2em !important;
+    min-width: 2em;
+    color:#03476e;
+}
+
+.onglet-secteur-header-title {
+    display: inline-flex;
+    width: 70%;
+}
+
+.onglet-secteur-header-action {
+    display: inline-flex;
+}
+
+.tab-selected .onglet-secteur-header-action a {
+    color: white;
+}
+

@@ -1,0 +1,34 @@
+{
+  "name": "applitutoriel-js-common-dts",
+  "version": "5.1.1",
+  "license": "CECILL-2.1",
+  "description": "Définition Typescript du module applitutoriel-js-common",
+  "bugs": {
+    "url": "https://github.com/diplomatiegouvfr/applitutoriel-modules/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diplomatiegouvfr/applitutoriel-modules.git"
+  },
+  "tsDefinitionDependencies": {},
+  "appDependencies": {},
+  "buildDependencies": {},
+  "testDependencies": {},
+  "author": "MEAE - Ministère de l'Europe et des Affaires étrangères",
+  "types": "./applitutoriel-js-common.d.ts",
+
+
+
+
+
+  "____HORNET-BUILDER____DO_NOT_MODIFY_THIS_OBJECT____": {
+    "current": "323217f643c3e3f1fe7532e72ac01bb0748c97be",
+    "history": {
+      "323217f643c3e3f1fe7532e72ac01bb0748c97be": {
+        "version": "5.1.1",
+        "date": "2017-10-17T09:18:22.233Z",
+        "deps": {}
+      }
+    }
+  }
+}
