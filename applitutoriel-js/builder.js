@@ -33,10 +33,8 @@ module.exports = {
 
     },
     externalModules: {
-        enabled: true,
+        enabled: false,
         directories: [
-            "/home/mouliwi/Dev/workspaceJS/Hornet.js/hornet-js/trunk",
-            "/home/mouliwi/Dev/workspaceJS/Hornet.js/hornet-themes-intranet/trunk"
         ]
     },
     config: {

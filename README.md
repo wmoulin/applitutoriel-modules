@@ -118,7 +118,7 @@ Ce fichier ne doit pas être modifié, excepté pour le log console. Les modific
 {
   "contextPath": "applitutorieljs",
   "welcomePage": "/accueil",
-  "themeName": "hornet-themes-intranet",
+  "themeName": "hornet-themes",
   ...
 }
 ```

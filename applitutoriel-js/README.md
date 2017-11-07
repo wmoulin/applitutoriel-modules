@@ -105,13 +105,13 @@ Ce fichier ne doit pas être modifié, excepté pour le log console. Les modific
 |contextPath| Context de l'applicatin déployé|Par défaut vide|
 |welcomePage|Page de démarrage de l'application|Passé en paramètre du ServerConfiguration|
 |themeHost|Url du thème applicative|[Protocol]://[host]:[port]/hornet/themName|
-|themName|nom de la dépendance de theme pour la copie dans les static|hornet-theme|
+|themeName|nom de la dépendance de theme pour la copie dans les static|hornet-theme|
 
 ```json
 {
   "contextPath": "applitutorieljs",
   "welcomePage": "/accueil",
-  "themeName": "hornet-themes-intranet",
+  "themeName": "hornet-themes",
   ...
 }
 

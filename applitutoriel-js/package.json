@@ -12,27 +12,27 @@
     "url": "git+https://github.com/diplomatiegouvfr/applitutoriel-modules.git"
   },
   "tsDefinitionDependencies": {
-    "applitutoriel-js-common-dts": "5.1.1",
-    "hornet-js-ts-typings": "5.1.1",
-    "hornet-js-bean-dts": "5.1.1",
-    "hornet-js-utils-dts": "5.1.1",
-    "hornet-js-core-dts": "5.1.1",
-    "hornet-js-components-dts": "5.1.1",
-    "hornet-js-react-components-dts": "5.1.1",
-    "hornet-js-passport-dts": "5.1.1",
-    "hornet-js-test-dts": "5.1.1"
+    "applitutoriel-js-common-dts": "5.1.0",
+    "hornet-js-ts-typings": "5.1.0",
+    "hornet-js-bean-dts": "5.1.0",
+    "hornet-js-utils-dts": "5.1.0",
+    "hornet-js-core-dts": "5.1.0",
+    "hornet-js-components-dts": "5.1.0",
+    "hornet-js-react-components-dts": "5.1.0",
+    "hornet-js-passport-dts": "5.1.0",
+    "hornet-js-test-dts": "5.1.0"
   },
   "appDependencies": {
-    "applitutoriel-js-common": "5.1.1",
-    "hornet-js-bean": "5.1.1",
-    "hornet-js-utils": "5.1.1",
-    "hornet-js-passport": "5.1.1",
-    "hornet-themes-intranet": "5.1.1",
+    "applitutoriel-js-common": "5.1.0",
+    "hornet-js-bean": "5.1.0",
+    "hornet-js-utils": "5.1.0",
+    "hornet-js-passport": "5.1.0",
+    "hornet-themes": "5.1.0",
     "jsonwebtoken": "7.3.0"
   },
   "buildDependencies": {},
   "testDependencies": {
-    "hornet-js-test": "5.1.1"
+    "hornet-js-test": "5.1.0"
   },
   "scripts": {
     "init-dev": "hb install",

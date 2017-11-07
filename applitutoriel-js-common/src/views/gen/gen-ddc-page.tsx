@@ -26,7 +26,7 @@ export class DeclarationconformitePage extends HornetPage<any, HornetComponentPr
                             conformément à la règlementation.
                             Cette page est obligatoire pour être conforme au RGAA 3.0. Pour des aides relatives à la
                             navigation et aux aménagements particuliers du site,
-                            <a href={this.genUrl("/politiqueAccessibilite")}>visitez la page accessibilité</a>.</p>
+                            <a href={this.genUrl("/aideex pole archi")}>visitez la page d'aide</a>.</p>
 
                         <p className="texte">La déclaration de conformité du site http://www.url-de-applicationweb a été
                             établie le jj/mm/aaaa.</p>
@@ -46,8 +46,7 @@ export class DeclarationconformitePage extends HornetPage<any, HornetComponentPr
                             44100 NANTES<br/>
                             Téléphone :+33 8 26 08 06 04<br/>
                             Télécopie :+33 2 51 77 36 99<br/>
-                            Courriel : <a href="mailto:sebastien.heurtematte@diplomatie.gouv.fr">Sébastien
-                            Heurtematte</a></p>
+                            Courriel : <a href="mailto:pole-architecture.dga-dsi-psi@diplomatie.gouv.fr">pôle architecture</a></p>
 
 
                         <h3>Technologies utilisées pour la réalisation du site</h3>
@@ -77,7 +76,7 @@ export class DeclarationconformitePage extends HornetPage<any, HornetComponentPr
                             <tbody>
                             <tr>
                                 <td><span lang="en">Firefox</span> 38</td>
-                                <td>NVDA 2015.1</td>
+                                <td>NVDA 2016.2.1</td>
                             </tr>
                             <tr>
                                 <td><span lang="en">Internet Explorer</span> 11</td>
@@ -179,6 +178,7 @@ export class DeclarationconformitePage extends HornetPage<any, HornetComponentPr
                             <li>Page d'accueil</li>
                             <li>Page contact</li>
                             <li>Page d'aide</li>
+                            <li>Page de recherche d'un partenaire</li>
                             <li>Page édition d'un partenaire</li>
                             <li>Page liste des secteurs</li>
                         </ul>
