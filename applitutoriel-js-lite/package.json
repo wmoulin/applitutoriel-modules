@@ -1,6 +1,6 @@
 {
   "name": "applitutoriel-js-lite",
-  "version": "5.1.1",
+  "version": "5.1.0",
   "license": "CECILL-2.1",
   "main": "index.js",
   "description": "Application tutoriel utilisant le Framework hornet",
