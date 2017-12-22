@@ -1,6 +1,6 @@
 {
   "name": "applitutoriel-modules",
-  "version": "5.1.0-rc.4",
+  "version": "5.1.0",
   "license": "CECILL-2.1",
   "description": "Projet permettant de builder les différents modules de l'applitutoriel",
   "bugs": {
