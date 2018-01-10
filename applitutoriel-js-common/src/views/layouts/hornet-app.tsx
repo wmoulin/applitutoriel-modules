@@ -225,7 +225,7 @@ export class HornetApp extends HornetPage<any, HornetAppProps, any> {
      */
     private changeUserTo(value) {
         Utils.setCls("hornet.user", users[value]);
-        this.navigateTo("", {}, () => {
+        this.navigateTo("accueil", {}, () => {
             this.forceUpdate();
             this.menu.forceUpdate();
             this.menu.setState({items: this.menu.props.configMenu ? NavigationUtils.getFilteredConfigNavigation(_.cloneDeep(this.menu.props.configMenu), this.user) : NavigationUtils.getFilteredConfigNavigation(NavigationUtils.getConfigMenu(), Utils.getCls("hornet.user"))});

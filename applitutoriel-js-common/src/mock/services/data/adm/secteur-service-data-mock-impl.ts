@@ -2,9 +2,10 @@ import { Utils } from "hornet-js-utils";
 import { Logger } from "hornet-js-utils/src/logger";
 import { ApplitutorielSecteursServiceImpl } from "applitutoriel-js-common/src/services/applitutoriel-secteurs-service-impl";
 import { URL_SECTEURS } from "applitutoriel-js-common/src/utils/urls";
-import { AdministrationSecteurService } from "applitutoriel-js-common/src/services/data/adm/adm-secteur-service";
+import { AdministrationSecteurServiceData } from "applitutoriel-js-common/src/services/data/adm/adm-secteur-service-data";
 import { Promise } from "hornet-js-utils/src/promise-api";
 import * as secteurs from "applitutoriel-js-common/src/resources/mock/adm/adm-lst-data.json";
+import { Response } from 'superagent';
 
 const logger: Logger = Utils.getLogger("applitutoriel-js-common.mock.services.data.adm.secteur-service-data-mock-impl");
 
@@ -14,8 +15,15 @@ const logger: Logger = Utils.getLogger("applitutoriel-js-common.mock.services.da
  * @implements {AdministrationSecteurService}
  * @extends {ServiceApi}
  */
-export class SecteurServiceDataMockImpl extends ApplitutorielSecteursServiceImpl implements AdministrationSecteurService {
-
+export class SecteurServiceDataMockImpl extends AdministrationSecteurServiceData {
+    
+    getToken(): String {
+        return "";
+    }
+    saveToken(response: Response): void {
+        return ;
+    }
+    
     /**
      * liste tous les secteurs
      * @return Promise

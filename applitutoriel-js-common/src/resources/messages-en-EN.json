@@ -584,7 +584,7 @@
         },
         "commentaire": {
           "label": "Comment (limit 255 characters).",
-          "maxLength": "« Comment » Comment field exceeds allowed number of characters {limitValue}, (currently {showValue})."
+          "maxLength": "« Comment » Comment field exceeds allowed number of characters {limit}."
         },
         "satisfaction": {
           "label": "How did you hear about us ?",

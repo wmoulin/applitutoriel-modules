@@ -3,7 +3,6 @@ import { Logger } from "hornet-js-utils/src/logger";
 import { UtilisateursDAO } from "src/dao/utilisateurs-dao";
 import { UtilisateurMetier } from "applitutoriel-js-common/src/models/user-mod";
 import { AuthService } from "applitutoriel-js-common/src/services/data/auth/auth-service";
-import { ServiceSecure } from "hornet-js-core/src/services/service-secure";
 import { Response } from "superagent";
 
 const logger: Logger = Utils.getLogger("applitutoriel.src.services.data.auth.auth-service-data-impl");

@@ -8,6 +8,11 @@ import * as HornetServer from "hornet-js-core/src/server";
 import { HornetApp } from "applitutoriel-js-common/src/views/layouts/hornet-app";
 import { HornetLayout } from "applitutoriel-js-common/src/views/layouts/hornet-layout";
 import { ErrorPage } from "hornet-js-react-components/src/widget/component/error-page";
+
+
+
+// import { AuthenticationAPIMiddleware } from "src/middleware/authentication-api";
+
 import { Routes } from "src/routes/routes";
 import {
     PageRenderingMiddleware,
@@ -16,7 +21,7 @@ import {
 import * as HornetMiddlewares from "hornet-js-core/src/middleware/middlewares";
 import { HornetMiddlewareList } from "hornet-js-core/src/middleware/middlewares";
 import * as DataBaseMiddlewares from "hornet-js-database/src/middleware/middleware";
-import { AuthenticationAPIMiddleware } from "src/middleware/authentication-api";
+
 // Authent passport
 import { PassportAuthentication } from "hornet-js-passport/src/passport-authentication";
 import { AuthenticationtConfiguration } from "hornet-js-passport/src/authentication-configuration";
@@ -29,14 +34,27 @@ import { Injector } from "hornet-js-core/src/inject/injector";
 
 import * as Menu from "applitutoriel-js-common/src/resources/navigation.json";
 // Mise en place des injections de service
-import "src/injector-context-services-data";
-
 const logger: Logger = Utils.getLogger("applitutoriel.server");
+
+async function initContext() {
+    await import("src/injector-context-services-data");
+    await import("src/injector-context-services-page");
+    return await import("applitutoriel-js-common/src/middleware/authentication-api");
+}
+
+let AuthenticationAPIMiddleware;
+
+/*
+let AuthenticationAPIMiddleware;
+initContext().then(
+    (AuthenticationAPI)=> {
+        AuthenticationAPIMiddleware = AuthenticationAPI
+    });
+*/
 
 export class Server {
 
     static configure(): ServerConfiguration {
-
         let configServer: ServerConfiguration = {
             serverDir: __dirname,
             staticPath: "../static",
@@ -107,27 +125,39 @@ export class Server {
     }
 
     static startApplication() {
-        if (process.env.NODE_ENV !== "production") {
-            let files;
-            let databaseConfName = Injector.getRegistered("configApplitutoDatabase");
-            if (databaseConfName === "config") {
-                files = [ "database/01_createTablesSqlite.sql", "database/02_initDataSqlite.sql" ];
-            } else if (databaseConfName === "configPostgres") {
-                files = [ "database/01_createTablesPostgres.sql", "database/02_initDataPostgres.sql" ];
+
+        initContext().then((AuthenticationAPI) => {
+
+            if (process.env.NODE_ENV !== "production" &&
+                !Utils.config.getOrDefault("mock.enabled", false) &&
+                !Utils.config.getOrDefault("mock.serviceData.enabled", false)) {
+                let files;
+                let databaseConfName = Injector.getRegistered("configApplitutoDatabase");
+                if (databaseConfName === "config") {
+                    files = [ "database/01_createTablesSqlite.sql", "database/02_initDataSqlite.sql" ];
+                } else if (databaseConfName === "configPostgres") {
+                    files = [ "database/01_createTablesPostgres.sql", "database/02_initDataPostgres.sql" ];
+                }
+
+                Database.runScripts([ {
+                    configName: databaseConfName,
+                    files: files
+                }]).then(() => {
+                    Server.start(AuthenticationAPI);
+                });
+            } else {
+                Server.start(AuthenticationAPI);
             }
-            Database.runScripts([ {
-                configName: databaseConfName,
-                files: files
-            }]).then(() => {
-                Server.start();
-            });
-        } else {
-            Server.start();
-        }
+        });
     }
 
-    static start() {
+    static start(AuthenticationAPI) {
+
+
+        AuthenticationAPIMiddleware = AuthenticationAPI.AuthenticationAPIMiddleware;
         let server = new HornetServer.Server(Server.configure(), Server.middleware());
         server.start();
+
+
     }
 }

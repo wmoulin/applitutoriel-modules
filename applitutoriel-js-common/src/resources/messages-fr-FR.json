@@ -581,7 +581,7 @@
         },
         "commentaire": {
           "label": "Commentaire (limite 255 caractères).",
-          "maxLength": "Le champ « Commentaire » excède {limitValue} caractères  (actuellement {showValue}). Veuillez corriger la saisie de ce champ."
+          "maxLength": "Le champ « Commentaire » excède {limit} caractères. Veuillez corriger la saisie de ce champ."
         },
         "satisfaction": {
           "label": "Comment avez-vous entendu parler de nous ?",

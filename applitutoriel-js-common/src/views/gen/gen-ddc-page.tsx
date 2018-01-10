@@ -26,7 +26,7 @@ export class DeclarationconformitePage extends HornetPage<any, HornetComponentPr
                             conformément à la règlementation.
                             Cette page est obligatoire pour être conforme au RGAA 3.0. Pour des aides relatives à la
                             navigation et aux aménagements particuliers du site,
-                            <a href={this.genUrl("/aideex pole archi")}>visitez la page d'aide</a>.</p>
+                            <a href={this.genUrl("/aide")}>visitez la page d'aide</a>.</p>
 
                         <p className="texte">La déclaration de conformité du site http://www.url-de-applicationweb a été
                             établie le jj/mm/aaaa.</p>

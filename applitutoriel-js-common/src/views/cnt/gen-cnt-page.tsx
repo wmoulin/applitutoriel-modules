@@ -44,7 +44,7 @@ export class ContactPage extends HornetPage<ContactService, HornetComponentProps
     onSubmit(data: any) {
         this.getService().envoyer(data).then((result) => {
             if (!result.errors) {
-                NotificationManager.notify(null, null, Notifications.makeSingleNotification("", this.i18n("info.message.IN-GE-CNT-01")));
+                NotificationManager.notify(null,null, Notifications.makeSingleNotification("", this.i18n("info.message.IN-GE-CNT-01")));
             } else {
                 let errors: Notifications = new Notifications();
                 let notif = new NotificationType();

@@ -1,6 +1,6 @@
 {
   "name": "applitutoriel-modules",
-  "version": "5.1.0",
+  "version": "5.1.0-pub",
   "license": "CECILL-2.1",
   "description": "Projet permettant de builder les différents modules de l'applitutoriel",
   "bugs": {
@@ -9,6 +9,11 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/diplomatiegouvfr/applitutoriel-modules.git"
+  },
+  "scripts": {
+    "init-dev": "hb install",
+    "init-snapshot": "HORNET_JS=`npm show hornet-js-core@latest version` && hb dependency:set --versionFix=${HORNET_JS} --dependencyVersionFix=hornet-js && HORNET_JS_THEMES=`npm show hornet-themes-intranet@latest version` && hb dependency:set --versionFix=${HORNET_JS_THEMES} --dependencyVersionFix=hornet-themes-intranet",
+    "version": "echo $npm_package_version"
   },
   "author": "MEAE - Ministère de l'Europe et des Affaires étrangères"
 }

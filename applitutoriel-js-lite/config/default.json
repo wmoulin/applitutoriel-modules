@@ -64,7 +64,7 @@
   "security": {
     "enabled": true,
     "hpp": true,
-    "ienoopen": true,
+    "ieNoOpen": true,
     "noSniff": true,
     "csp": {
       "enabled": true,
@@ -204,7 +204,7 @@
   "mock": {
     "enabled": false,
     "servicePage": {
-      "enabled": true
+      "enabled": false
     },
     "serviceData": {
       "enabled": false
@@ -221,7 +221,13 @@
     "logoutUrl": "/logout"
   },
   "cache": {
-    "enabled": true,
-    "timetolive": 60
+    "client": {
+      "enabled": false,
+      "timetolive": 60
+    },
+    "server": {
+      "enabled": false,
+      "timetolive": 120
+    }
   }
 }

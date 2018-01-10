@@ -208,8 +208,8 @@ export class IdentiteTab extends TabContent<IdentiteTabProps, any> {
                     {this.renderFieldsetType()}
                     {(this.state.isVIP) ? this.renderPartenaireVip() : this.renderPartenaire()}
                     {this.renderButton()}
+                    {this.renderButtonCancel()}
                 </Form>
-                {this.renderButtonCancel()}
             </div>
         );
     }
@@ -231,7 +231,7 @@ export class IdentiteTab extends TabContent<IdentiteTabProps, any> {
     /**
      * Alimente la fiche de partenaire
      */
-    setPartenaire(partenaire: PartenaireMetier) {
+    setPartenaire(partenaire: PartenaireMetier, mode : string) {
         this.partenaire = partenaire;
 
         if (partenaire.ville && partenaire.ville.pays && partenaire.ville.pays.id) {
@@ -242,16 +242,19 @@ export class IdentiteTab extends TabContent<IdentiteTabProps, any> {
             });
         }
 
-        this.setState({ isVIP: partenaire.isVIP });
+
         if (this.partenaire.satisfaction) {
             partenaire.satisfaction = { ids: this.partenaire.satisfaction.split(",") }
         }
         /* MaJ de chacun des champs */
-        this.formPartenaire.updateFieldsAndClean(partenaire);
+        //this.dataSourceIsClient.reload();
         this.dataSourceOtherTelephones.reload();
+        this.setState({ isVIP: partenaire.isVIP, readOnly : (mode === PAR_MODE_CONSULTER)}, ()=>{
+            this.formPartenaire.updateFieldsAndClean(partenaire);
+            /* Toggle Des champs en readOnly */
+            this.toggleReadOnly(this.isNonContactFieldDisabled());
+        });
 
-        /* Toggle Des champs en readOnly */
-        this.toggleReadOnly(this.isNonContactFieldDisabled());
     }
 
     /**
@@ -340,22 +343,6 @@ export class IdentiteTab extends TabContent<IdentiteTabProps, any> {
 
             accordions.push(accordion);
         });
-        accordions.push(
-        <Accordion title={"test bfr"} isOpen={false} key={"identite-accordion-" + 15}>
-            <Form>
-                <Row>
-                    <AutoCompleteField dataSource={this.dataSourceCivilite}
-                        maxHeight={200}
-                        name="civilite"
-                        label={this.formI18n.fields.civilite.label}
-                        required={true}
-                        labelKey="libelle"
-                        valueKey="id"
-                        writable={false}
-                        toolTip={this.i18n("form.autoCompleteField.toolTip")} />
-                </Row>
-            </Form>
-        </Accordion>);
         return accordions;
     }
 
@@ -515,7 +502,7 @@ export class IdentiteTab extends TabContent<IdentiteTabProps, any> {
     renderOtherPhones() {
 
         return (
-            <Table id="liste-produits">
+            <Table id="liste-other-phones">
                 <Header title={this.i18n("partenaireFichePage.tableauAutresTel.title")}>
                     <MenuActions>
                         <ActionButton title={this.i18n("administration.secteurs.table.addTitle")}

@@ -65,7 +65,7 @@
   "security": {
     "enabled": true,
     "hpp": true,
-    "ienoopen": true,
+    "ieNoOpen": true,
     "noSniff": true,
     "csp": {
       "enabled": true,

@@ -80,6 +80,13 @@ module.exports = {
         ],
         typescript: { //bin: "~/Dev/node-v4.5.0-linux-x64/lib/node_modules/typescript"
         },
+        karma: {
+            template: {
+                debug: "./test/template/debug.html",
+                context: "./test/template/context.html",
+                clientContext: "./test/template/client_with_context.html"
+            }
+        },
         template: [
             {
                 context: [{error: "404", suffixe: "_404", message: "Oops! Nous ne trouvons pas ce que vous cherchez!"}, {error: "500", suffixe: "_500", message: "Oops! Une erreur est survenue!"}],

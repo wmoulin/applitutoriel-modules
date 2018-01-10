@@ -10,7 +10,7 @@ import {
 } from "applitutoriel-js-common/src/actions/adm/adm-lst-actions";
 
 
-import { AdministrationSecteurService } from "applitutoriel-js-common/src/services/data/adm/adm-secteur-service";
+import { AdministrationSecteurServiceData } from "applitutoriel-js-common/src/services/data/adm/adm-secteur-service-data";
 import SecteursRoutesClient from "src/routes/adm/adm-lst-client-routes";
 
 import { Injector } from "hornet-js-core/src/inject/injector";
@@ -23,23 +23,23 @@ export default class SecteursRoutesServer extends SecteursRoutesClient {
         super();
         /* Route des data*/
         this.addDataRoute("/",
-            () => new DataRouteInfos(ListerSecteurs, null, Injector.getRegistered(AdministrationSecteurService))
+            () => new DataRouteInfos(ListerSecteurs, null, Injector.getRegistered(AdministrationSecteurServiceData))
         );
 
         this.addDataRoute("/(\\d+)",
-            (id) => new DataRouteInfos(ModifierSecteur,  {id: id}, Injector.getRegistered(AdministrationSecteurService)),
+            (id) => new DataRouteInfos(ModifierSecteur,  {id: id}, Injector.getRegistered(AdministrationSecteurServiceData)),
             Roles.ADMIN,
             "put"
         );
 
         this.addDataRoute("/",
-            (id) => new DataRouteInfos(CreerSecteur, null, Injector.getRegistered(AdministrationSecteurService)),
+            (id) => new DataRouteInfos(CreerSecteur, null, Injector.getRegistered(AdministrationSecteurServiceData)),
             Roles.ADMIN,
             "post"
         );
 
         this.addDataRoute("/(\\d+)",
-            (id) => new DataRouteInfos(SupprimerSecteur, {id: id}, Injector.getRegistered(AdministrationSecteurService)),
+            (id) => new DataRouteInfos(SupprimerSecteur, {id: id}, Injector.getRegistered(AdministrationSecteurServiceData)),
             Roles.ADMIN,
             "delete"
         );

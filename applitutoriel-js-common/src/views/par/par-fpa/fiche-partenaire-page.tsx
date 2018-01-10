@@ -62,12 +62,12 @@ export class FichePartenairePage extends HornetPage<FichePartenairePageService, 
 
     updateClient() {
         if (this.attributes.mode === PAR_MODE_CREER) {
-            this.identiteTab.setPartenaire(new PartenaireMetier());
+            this.identiteTab.setPartenaire(new PartenaireMetier(), this.attributes.mode);
         } else {
             this.getService().fichePartenaire(this.attributes.id).then((result: FichePartenaireResult) => {
                 let products = [];
                 if (result.partenaire) {
-                    this.identiteTab.setPartenaire(result.partenaire);
+                    this.identiteTab.setPartenaire(result.partenaire, this.attributes.mode);
                     products = result.partenaire.listeProduit;
                     /* MaJ du titre de la page avec le nom et prénom */
                     this.fichePartenaireTitre.setState({
@@ -106,7 +106,7 @@ export class FichePartenairePage extends HornetPage<FichePartenairePageService, 
         p.then((result: FichePartenaireResult) => {
             let products = [];
             if (result.partenaire) {
-                this.identiteTab.setPartenaire(result.partenaire);
+                this.identiteTab.setPartenaire(result.partenaire, this.attributes.mode);
                 products = result.partenaire.listeProduit;
                 /* MaJ du titre de la page avec le nom et prénom */
                 this.fichePartenaireTitre.setState({
@@ -178,16 +178,14 @@ export class FichePartenairePage extends HornetPage<FichePartenairePageService, 
                          onClick={this.loadAsyncTab}>
                         <SecteursTab dataSource={this.dataSourceSecteurs}/>
                     </Tab>
-                    {this.attributes.mode != "consulter" ?
-                        <Tab id="tab4"
-                             mount={false}
-                             onClick={this.addTab}
-                        >
+                    {/*{this.attributes.mode != "consulter" ?*/}
+                        {/*<Tab id="tab4" mount={false} onClick={this.addTab}>*/}
 
-                            <TabHeader>
-                                <a href={"#"} title={"Ajouter un onglet 'Produit'"} onClick={this.addTab}>+</a>
-                            </TabHeader>
-                        </Tab> : <div/>}
+
+                            {/*<TabHeader>*/}
+                                {/*<a href={"#"} title={"Ajouter un onglet 'Produit'"} onClick={this.addTab}>+</a>*/}
+                            {/*</TabHeader>*/}
+                        {/*</Tab> : <div/>}*/}
                 </Tabs>
             </div>
         );

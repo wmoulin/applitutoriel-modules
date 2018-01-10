@@ -4,11 +4,11 @@ import { BusinessError } from "hornet-js-utils/src/exception/business-error";
 import { SecteurMetier } from "applitutoriel-js-common/src/models/adm/sec-mod";
 import { SecteursDAO } from "src/dao/secteurs-dao";
 import { Promise } from "hornet-js-utils/src/promise-api";
-import { AdministrationSecteurService } from "applitutoriel-js-common/src/services/data/adm/adm-secteur-service";
+import { AdministrationSecteurServiceData } from "applitutoriel-js-common/src/services/data/adm/adm-secteur-service-data";
 
 const logger: Logger = Utils.getLogger("applitutoriel.src.services.data.sec.secteur-service-impl");
 
-export class SecteurServiceImpl extends AdministrationSecteurService {
+export class SecteurServiceImpl extends AdministrationSecteurServiceData {
 
     private secteursDAO: SecteursDAO = new SecteursDAO();
 

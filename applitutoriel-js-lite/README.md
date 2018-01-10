@@ -1,6 +1,6 @@
 # applitutoriel-js-lite
 
-L'application TUTORIEL a pour objectif de présenter une application batch basée sur le framework HornetJs lite. Le backend est écrit en TypeScript (avec des accès base de données), l'idée est d'avoir une stack full TypeScript.
+L'application TUTORIEL a pour objectif de présenter une application basée sur le framework Hornet.
 
 A noter :
 * Hornet facilite la mise en oeuvre du RGAA V3 dans une application.
@@ -23,23 +23,23 @@ L'applitutoriel est une mise en pratique du RGAA V3 au travers du framework Horn
 ## Prérequis #
 
 * NodeJS 6.X
-* hornet-js-builder 1.5.X installé en global:
+* hornet-js-builder 1.x.x (le builder) installé globalement :
 
 ```shell
     $ npm install -g hornet-js-builder
 ```
 
-* clone du projet `applitutoriel-modules`
+* checkout du projet `applitutoriel-modules`
 
 ## Initialisation #
-
-Se positionner dans le répertoire du projet `applitutoriel-js-lite` et lancer la commande:
+Se positionner dans le répertoire du projet `applitutoriel-js-modules` et lancer la commande :
 
 ```shell
     $ hb install
 ```
 
 ## Démarrage de l'application en mode développement #
+Se positionner dans le répertoire du projet `applitutoriel-js-lite`
 
 ### Commande par défaut
 
@@ -67,19 +67,7 @@ se fasse via ce dernier.
 
 ## Vérification
 
-L'url du batch est accessible depuis un navigateur à l'addresse : `http://localhost:8888/applitutorieljslite/`
-où __applitutorieljslite__ correspond au `contextPath` dans le fichier `config/default.json`.
-
-## Mode Mock
-
-Il est possible d'utiliser l'applitutoriel sans déployer la partie service.
-Pour cela, activer le mode `mock` dans le `config/default.json`.
-
-```json
-  "mock": {
-    "enabled": true
-  }
-```
+L'application est accessible depuis un navigateur à l'addresse : `http://localhost:8889/applitutorieljslite/` correspond au `contextPath` dans le fichier `config/default.json`.
 
 ## Packaging de l'application
 
@@ -89,6 +77,7 @@ $ hb package
 
 Les livrables sont à récupérer dans le répertoire : `target`
 
+- `applitutoriel-js-lite-5.1.0-static.zip`
 - `applitutoriel-js-lite-5.1.0-dynamic.zip`
 
 ## Fichier de configuration de l'application : default.json
@@ -102,142 +91,51 @@ Ce fichier ne doit pas être modifié, excepté pour le log console. Les modific
 | Paramètre | Description | Valeur |
 |-----------|-------------|--------|
 |contextPath| Context de l'applicatin déployé|Par défaut vide|
+|welcomePage|Page de démarrage de l'application|Passé en paramètre du ServerConfiguration|
+|themName|nom de la dépendance de theme pour la copie dans les static|hornet-themes|
 
 ```json
 {
-  "contextPath": "applitutoriel-js-lite",
+  "contextPath": "applitutorieljslite",
+  "welcomePage": "/accueil",
+  "themeName": "hornet-themes"
   ...
 }
 
 ```
 
+### Configuration de l'authentification
 
-### Configuration serveur
+Note : Il ne s'agit pas d'une configuration à proprement parlé de Hornet mais uniqument viable dans l'applitutoriel
 
 | Paramètre | Description | Valeur |
 |-----------|-------------|--------|
-|route|Route identifié pour l'affinité de session nodejs|js1|
-|port|Port de démarrage du serveur|8888|
-|keepAlive|Activation du mode HTTP KeepAlive|true|
-|maxConnections|Nombre maximal de connexion à l'instance nodejs|100|
-|timeout|Timeout des réponses HTTP|300000|
-|uploadFileSize|Taille maximal d'upload de fichier|1000000|
-|sessionTimeout|Timeout des sessions utilisateur|1800000|
+|loginUrl|Url de connexion à l'application|/login|
+|logoutUrl|Url de déconnexion à l'application|/logout|
 
 ```json
-  "server": {
-    "route": "js1",
-    "port": 8888,
-    "keepAlive": true,
-    "maxConnections": 100,
-    "timeout": 300000,
-    "uploadFileSize": 1000000,
-    "sessionTimeout": 1800000
+  "authentication": {
+    "loginUrl": "/login",
+    "logoutUrl": "/logout"
   }
 ```
 
-### Configuration des logs serveurs
-
-Niveau de log :
+### Configuration du Cache
 
 | Paramètre | Description | Valeur |
 |-----------|-------------|--------|
-|level.[all]|niveau de log pour toute l'application|INFO|
-|level.monappli.view|niveau de log spécifique pour une partie de l'application |optionnel|
+|enabled|Activation du cache sur les requêtes de services|true|
+|timetolive|Durée de rétention du cache|60|
 
 ```json
- "log": {
-    "levels": {
-      "[all]": "DEBUG",
-      "hornet-js-components.table": "TRACE"
+"cache": {
+    "client": {
+      "enabled": false,
+      "timetolive": 60
+    },
+    "server": {
+      "enabled": false,
+      "timetolive": 120
     }
-    ...
-```
-
-Déclaration des appenders :
-
-| Paramètre | Description | Valeur |
-|-----------|-------------|--------|
-|type|Type d'appender|*file* pour un fichier simple<br/>*dateFile* pour un fichier contenant la date<br/>*console* ...|
-|filename| Chemin absolu ou relatif au lancement du fichier de log | /var/log/nodejs/applitutoriel/applitutoriel-1.log|
-|pattern| Présent pour les types *dateFile* <br />Permet de donner un pattern de date qui sera ajouté au nom du fichier.|-yyyy-MM-dd|
-|layout.type| Type d'affichage des messages|pattern|
-|layout.pattern| Schéma d'affichage des messages |"%[%d{ISO8601}|%x{tid}|%x{user}|%p|%c|%x{fn}|%m%]"|
-
-
-Ex: type console
-
-```json
-"appenders": [
-	{
-	    "type": "console",
-	    "layout": {
-	      "type": "pattern",
-	      "pattern": "%[%d{ISO8601}|%x{tid}|%x{user}|%p|%c|%x{fn}|%m%]"
-	    }
-	}
-]
-```
-
-ex : type fichier
-
-```json
-"appenders": [
-	{
-	    "type": "dateFile",
-	    "filename": "log/app.log",
-	    "layout": {
-	      "type": "pattern",
-	      "pattern": "%d{ISO8601}|%x{tid}|%x{user}|%p|%c|%x{fn}|%m"
-	    }
-	}
-]
-```
-
-
-### Configuration des services
-
-Si des appels à des services tiers sont nécessaires, on peut configurer les URL's.
-
-| Paramètre | Description | Valeur |
-|-----------|-------------|--------|
-|services.host| URL de déploiement du module applitutoriel-service| [Protocol]://[host]:[port] |
-|services.name| Nom de déploiement des services|applitutoriel|
-
-```json
-  "services": {
-    "host": "http://localhost:8080/",
-    "name": "applitutoriel-service"
-  },
-```
-
-### Mode mock
-
-| Paramètre | Description | Valeur |
-|-----------|-------------|--------|
-|enabled|Activation du mode mock de l'application|false|
-
-```json
-  "mock": {
-    "enabled": false
   }
 ```
-
-### Mode fullSPA
-
-NOTE : Le mode fullSPA n'est pas encore complètement supporté par hornet, la configuration est présente à titre d'information
-
-| Paramètre | Description | Valeur |
-|-----------|-------------|--------|
-|enabled|Activation du mode fullSPA|false|
-|host|Host du mode fullSPA|""|
-|name|nom du service pour le mode fullSPA|/services|
-
-```json
-"fullSpa": {
-    "enabled": false,
-    "host": "",
-    "name": "/services"
-  }
-```
-

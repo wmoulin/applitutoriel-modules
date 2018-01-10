@@ -14,7 +14,6 @@ import {
     UnmanagedViewErrorMiddleware
 } from "hornet-js-react-components/src/middleware/component-middleware";
 import * as HornetMiddlewares from "hornet-js-core/src/middleware/middlewares";
-import { AuthenticationAPIMiddleware } from "src/middleware/authentication-api";
 
 // Authent passport
 import { PassportAuthentication } from "hornet-js-passport/src/passport-authentication";
@@ -27,6 +26,14 @@ import { HornetMiddlewareList } from "hornet-js-core/src/middleware/middlewares"
 
 import * as Menu from "applitutoriel-js-common/src/resources/navigation.json";
 import "src/injector-context-services-data";
+
+async function initContext() {
+    await import("src/injector-context-services-data");
+    return await import("applitutoriel-js-common/src/middleware/authentication-api");
+}
+
+let AuthenticationAPIMiddleware;
+
 const logger: Logger = Utils.getLogger("applitutoriel.server");
 
 export class Server {
@@ -68,8 +75,8 @@ export class Server {
 
     static middleware(): HornetMiddlewareList {
         let hornetMiddlewareList = new HornetMiddlewares.HornetMiddlewareList()
-        .addAfter(PageRenderingMiddleware, HornetMiddlewares.UserAccessSecurityMiddleware)
-        .addAfter(UnmanagedViewErrorMiddleware, HornetMiddlewares.DataRenderingMiddleware);
+            .addAfter(PageRenderingMiddleware, HornetMiddlewares.UserAccessSecurityMiddleware)
+            .addAfter(UnmanagedViewErrorMiddleware, HornetMiddlewares.DataRenderingMiddleware);
 
         if (Utils.config.getOrDefault("authentication.saml.enabled", false)) {
 
@@ -102,7 +109,12 @@ export class Server {
     }
 
     static startApplication() {
-        let server = new HornetServer.Server(Server.configure(), Server.middleware());
-        server.start();
+        initContext().then(
+            (AuthenticationAPI) => {
+                AuthenticationAPIMiddleware = AuthenticationAPI.AuthenticationAPIMiddleware;
+                let server = new HornetServer.Server(Server.configure(), Server.middleware());
+                server.start();
+            }
+        );
     }
 }

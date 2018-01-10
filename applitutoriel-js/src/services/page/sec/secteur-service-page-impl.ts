@@ -12,7 +12,7 @@ const logger: Logger = Utils.getLogger("applitutoriel.services.adm.secteur-servi
  * @implements {AdministrationSecteurService}
  * @extends {ServiceApi}
  */
-export class SecteurServiceImpl extends ApplitutorielSecteursServiceImpl implements AdministrationSecteurService {
+export class SecteurServiceImpl extends AdministrationSecteurService {
 
     /**
      * liste tous les secteurs

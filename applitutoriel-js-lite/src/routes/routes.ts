@@ -15,6 +15,7 @@ import {
     URL_CONTACT
 } from "applitutoriel-js-common/src/utils/urls";
 import {AbstractRoutes} from "hornet-js-core/src/routes/abstract-routes";
+import { NotFoundPage } from "applitutoriel-js-common/src/views/gen/gen-nfe-page";
 const logger: Logger = Utils.getLogger("applitutoriel.routes.routes");
 
 export class Routes extends AbstractRoutes {
@@ -33,6 +34,10 @@ export class Routes extends AbstractRoutes {
         /* Routes des pages */
         this.addPageRoute("/accueil",
             () => new PageRouteInfos(HomePage),
+            PUBLIC_ROUTE
+        );
+        this.addPageRoute("/404",
+            () => new PageRouteInfos(NotFoundPage),
             PUBLIC_ROUTE
         );
         this.addPageRoute("/aide",

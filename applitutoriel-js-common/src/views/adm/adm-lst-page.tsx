@@ -117,7 +117,7 @@ export class SecteursPage extends HornetPage<AdministrationSecteurService, Horne
                                           action={this.sortMulti} priority={true}/>
                         </MenuActions>
                     </Header>
-                    <Content dataSource={this.dataSource} onSubmit={this.submitLineForm} schema={schemaEditionTable}
+                    <Content dataSource={this.dataSource} onSubmit={this.submitLineForm} schema={schemaEditionTable} 
                              notifId="notif2">
                         <Columns>
                             <Column keyColumn="nom"
@@ -222,7 +222,7 @@ export class SecteursPage extends HornetPage<AdministrationSecteurService, Horne
 
         this.getService().supprimer(item.id).then((result) => {
             if (!result.errors) {
-                NotificationManager.notify(null, null,
+                NotificationManager.notify(null,null,
                     Notifications.makeSingleNotification("SECTEUR_DELETED", "info.message.IN-AD-LST-02"));
                 this.refreshSecteurs();
             }

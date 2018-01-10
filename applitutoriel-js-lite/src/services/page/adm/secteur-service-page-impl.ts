@@ -2,7 +2,7 @@ import { Utils } from "hornet-js-utils";
 import { Logger } from "hornet-js-utils/src/logger";
 import { ApplitutorielSecteursServiceImpl } from "src/services/page/adm/applitutoriel-secteurs-service-impl";
 import { URL_SECTEURS } from "applitutoriel-js-common/src/utils/urls";
-import { AdministrationSecteurService } from "applitutoriel-js-common/src/services/data/adm/adm-secteur-service";
+import { AdministrationSecteurService } from "applitutoriel-js-common/src/services/page/adm/adm-secteur-service";
 
 const logger: Logger = Utils.getLogger("applitutoriel.services.page.adm.secteur-service-page-impl");
 
