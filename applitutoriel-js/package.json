@@ -38,5 +38,20 @@
     "init-dev": "hb install",
     "start": "node index.js"
   },
-  "author": "MEAE - Ministère de l'Europe et des Affaires étrangères"
+  "author": "MEAE - Ministère de l'Europe et des Affaires étrangères",
+
+
+
+
+
+  "____HORNET-BUILDER____DO_NOT_MODIFY_THIS_OBJECT____": {
+    "current": "6272a06b101264581d843ab73a57748f8767333d",
+    "history": {
+      "6272a06b101264581d843ab73a57748f8767333d": {
+        "version": "5.1.0-pub",
+        "date": "2018-02-16T19:07:46.930Z",
+        "deps": {"base64url":"2.0.0","isemail":"1.2.0","joi":"6.10.1","jwa":"1.1.5","jws":"3.1.4","lodash.once":"4.1.1","moment":"2.20.1","topo":"1.1.0"}
+      }
+    }
+  }
 }

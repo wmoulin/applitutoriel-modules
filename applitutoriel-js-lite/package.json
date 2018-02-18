@@ -46,5 +46,20 @@
     "init-dev": "hb install",
     "start": "node index.js"
   },
-  "author": "MEAE - Ministère de l'Europe et des Affaires étrangères"
+  "author": "MEAE - Ministère de l'Europe et des Affaires étrangères",
+
+
+
+
+
+  "____HORNET-BUILDER____DO_NOT_MODIFY_THIS_OBJECT____": {
+    "current": "309b5b7b539efef02ffca8119e737e29d803448c",
+    "history": {
+      "309b5b7b539efef02ffca8119e737e29d803448c": {
+        "version": "5.1.0-pub",
+        "date": "2018-02-16T19:08:52.177Z",
+        "deps": {"abbrev":"1.1.1","aproba":"1.2.0","are-we-there-yet":"1.1.4","balanced-match":"1.0.0","block-stream":"0.0.9","brace-expansion":"1.1.11","caseless":"0.12.0","code-point-at":"1.1.0","console-control-strings":"1.1.0","deep-extend":"0.4.2","delegates":"1.0.0","detect-libc":"1.0.3","fs.realpath":"1.0.0","fstream":"1.0.11","fstream-ignore":"1.0.5","gauge":"2.7.4","glob":"7.1.2","graceful-fs":"4.1.11","har-schema":"1.0.5","har-validator":"4.2.1","has-unicode":"2.0.1","inflight":"1.0.6","ini":"1.3.5","is-fullwidth-code-point":"1.0.0","libpq":"1.8.7","minimatch":"3.0.4","moment":"2.20.1","nan":"2.8.0","node-pre-gyp":"0.6.39","nopt":"4.0.1","npmlog":"4.1.2","number-is-nan":"1.0.1","once":"1.4.0","os-homedir":"1.0.2","os-tmpdir":"1.0.2","osenv":"0.1.5","performance-now":"0.2.0","pg-pool":"2.0.3","pg-types":"1.13.0","pgpass":"1.0.2","postgres-array":"1.0.2","postgres-bytea":"1.0.0","postgres-date":"1.0.3","postgres-interval":"1.1.1","process-nextick-args":"2.0.0","rc":"1.2.5","readable-stream":"2.3.4","rimraf":"2.6.2","set-blocking":"2.0.0","signal-exit":"3.0.2","split":"1.0.1","string-width":"1.0.2","strip-json-comments":"2.0.1","tar":"2.2.1","tar-pack":"3.4.1","tunnel-agent":"0.6.0","uid-number":"0.0.6","underscore":"1.8.3","uuid":"3.2.1","wide-align":"1.1.2","wrappy":"1.0.2"}
+      }
+    }
+  }
 }

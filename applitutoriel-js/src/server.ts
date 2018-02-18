@@ -2,7 +2,9 @@
 import { Utils } from "hornet-js-utils";
 import { Logger } from "hornet-js-utils/src/logger";
 import * as fs from "fs";
+import * as path from "path";
 import { AppliI18nLoader } from "applitutoriel-js-common/src/i18n/app-i18n-loader";
+import { I18nLoaderSubDirectory } from "hornet-js-core/src/i18n/i18n-loader-sub-directory";
 import { ServerConfiguration } from "hornet-js-core/src/server-conf";
 import * as HornetServer from "hornet-js-core/src/server";
 import { HornetApp } from "applitutoriel-js-common/src/views/layouts/hornet-app";
@@ -27,6 +29,8 @@ import { HornetMiddlewareList } from "hornet-js-core/src/middleware/middlewares"
 import * as Menu from "applitutoriel-js-common/src/resources/navigation.json";
 import "src/injector-context-services-data";
 
+const ModuleServer = require("applitutoriel-js-test/src/server-module");
+
 async function initContext() {
     await import("src/injector-context-services-data");
     return await import("applitutoriel-js-common/src/middleware/authentication-api");
@@ -48,10 +52,10 @@ export class Server {
             errorComponent: ErrorPage,
             defaultRoutesClass: new Routes(),
             sessionStore: null, // new RedisStore({host: "localhost",port: 6379,db: 2,pass: "RedisPASS"}),
-            routesLoaderPaths: ["src/routes/"],
+            routesLoaderPaths: ["src/routes/", path.join("applitutoriel-js-test", "src", "routes/")],
             /*Directement un flux JSON >>internationalization:require("./i18n/messages-fr-FR.json"),*/
             /*Sans utiliser le système clé/valeur>> internationalization:null,*/
-            internationalization: new AppliI18nLoader(),
+            internationalization: new AppliI18nLoader(), //new I18nLoaderSubDirectory([path.join(__dirname, "../../applitutoriel-js-common/src/resources")]),
             menuConfig: (<any> Menu).menu,
             loginUrl: Utils.config.get("authentication.loginUrl"),
             logoutUrl: Utils.config.get("authentication.logoutUrl"),
@@ -111,8 +115,16 @@ export class Server {
     static startApplication() {
         initContext().then(
             (AuthenticationAPI) => {
+                let masterConfiguration:ServerConfiguration = Server.configure();
                 AuthenticationAPIMiddleware = AuthenticationAPI.AuthenticationAPIMiddleware;
-                let server = new HornetServer.Server(Server.configure(), Server.middleware());
+                //let serverModule = new ModuleServer.default();
+                //serverModule.configServer.appComponent = masterConfiguration.appComponent
+                //serverModule.configServer.layoutComponent = masterConfiguration.layoutComponent;
+               // serverModule.configServer.errorComponent = masterConfiguration.errorComponent;
+                //let router: HornetMiddlewares.HornetRouter = serverModule.initRouter();
+                let middlewares = Server.middleware();
+                //middlewares.addRouterBefore(router ,HornetMiddlewares.RouterServerMiddleware);
+                let server = new HornetServer.Server(Server.configure(), middlewares);
                 server.start();
             }
         );

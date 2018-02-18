@@ -1,0 +1,9 @@
+node_modules
+definition-ts
+**/static/hornet-themes
+**/static/js
+**/src/**/*.js
+**/src/**/*.js.map
+**/test/**/*.js
+**/test/**/*.js.map
+**/src/**/*.d.ts

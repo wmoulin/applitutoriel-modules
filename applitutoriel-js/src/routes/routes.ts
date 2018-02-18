@@ -13,6 +13,7 @@ import { PlanAppliPage } from "applitutoriel-js-common/src/views/nav/nav-pap-pag
 import { AccessibilitePage } from "applitutoriel-js-common/src/views/gen/gen-acb-page";
 import { DeclarationconformitePage } from "applitutoriel-js-common/src/views/gen/gen-ddc-page";
 import { NotFoundPage } from "applitutoriel-js-common/src/views/gen/gen-nfe-page";
+import {Utils} from "hornet-js-utils";
 
 
 export class Routes extends AbstractRoutes {
@@ -60,5 +61,11 @@ export class Routes extends AbstractRoutes {
         this.addLazyRoutes(URL_REF, "ref/ref-routes");
 
         this.addLazyRoutes("/produits", "pro/pro-routes");
+
+        //if(!Utils.isServer){ // sur le serveur c'est un sub router
+            //this.addLazyRoutes("/test", "applitutoriel-js-test/src/routes/sub-module-routes");
+            this.addLazyRoutes("/test/secteurs", "adm/test-adm-lst-routes");
+            this.addLazyRoutes("/test/prosuits", "adm/test-adm-rps-routes");
+        //}
     }
 }

@@ -6,6 +6,7 @@ import { HornetApp } from "applitutoriel-js-common/src/views/layouts/hornet-app"
 import { ErrorPage } from "hornet-js-react-components/src/widget/component/error-page";
 import { ReactClientInitializer } from "hornet-js-react-components/src/react/react-client";
 import "src/injector-context-services-page";
+import "applitutoriel-js-test/src/injector-context-services-page";
 
 (function startClient() {
     const logger: Logger = Utils.getLogger("applitutoriel.client");

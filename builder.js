@@ -6,7 +6,9 @@ module.exports = {
         // Add task if needed
     },
     externalModules: {
-        enabled: false,
-        directories: []
+        enabled: true,
+        directories: ["/home/wmoulin/dev/js/MAE/hornet-js", "/home/wmoulin/dev/js/MAE/hornet-themes-intranet"
+        ]
     }
+
 };

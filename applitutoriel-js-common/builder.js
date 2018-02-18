@@ -10,7 +10,8 @@ module.exports = {
         conf.generatedTypings.file = project.name + ".d.ts";
     },
     externalModules: {
-        enabled: false,
-        directories: []
-    }
+        enabled: true,
+        directories: ["/home/wmoulin/dev/js/MAE/hornet-js", "/home/wmoulin/dev/js/MAE/hornet-themes-intranet"
+        ]
+    },
 };

@@ -33,12 +33,12 @@ module.exports = {
 
     },
     externalModules: {
-        enabled: false,
-        directories: [
+        enabled: true,
+        directories: ["/home/wmoulin/dev/js/MAE/hornet-js", "/home/wmoulin/dev/js/MAE/hornet-themes-intranet"
         ]
     },
     config: {
-        routesDirs: ["." + path.sep + "routes"],
+        routesDirs: ["." + path.sep + "routes", path.join("..", "node_modules", "app"), path.join("..", "node_modules", "app", "applitutoriel-js-test", "src", "routes")],
 
         // Exemple d'exclusion de fichiers/répertoires local à l'application et de modules
         // Cet exemple n'est pas forcement cohérent puisque le client.js n'est pas dépendant des middlewares

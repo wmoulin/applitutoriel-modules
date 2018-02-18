@@ -208,5 +208,6 @@
       "enabled": false,
       "timetolive": 120
     }
-  }
+  },
+  "shared":{"submodule":{"service":{"name": "/services/test"}}}
 }
